@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            width: 100%;
+           height: 100%;
+           margin: 0;
+        }
+        #surcontainer{
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 50%;
+            background: red ;
+            border: 10px solid black;
+        }
+        .surslide_img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+        .surslide_img img{
+            width: 100%;
+            height: 100%;
+        }
+        #suri1,#suri2,#suri3,#suri4{
+            display: none;
+        }
+        .surpre, .surnxt{
+           width: 12%;
+           height: 100%;
+            position: absolute;
+            background-color: rgba(88,88,88, 0);
+            z-index: 99;
+            cursor: pointer;
+        }
+        .surpre{
+            left: 0;
+
+        }
+        .surnxt{
+            right: 0;
+        }
+        .surnav{
+            width: 100%;
+            height: 11px;
+            bottom: 12%;
+            position: absolute;
+            text-align: center;
+            z-index: 99;
+        }
+        .surdots{
+            top: -5px;
+            width: 50px;
+            height: 50px;
+            margin: 0 4px;
+            position: relative;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: rgba(0,0,0, .6);
+        }
+        .surslide_img{
+            z-index: -1;
+        }
+
+        #suri1:checked ~ #surone,
+        #suri2:checked ~ #surtwo,
+        #suri3:checked ~ #surthree,
+        #suri4:checked ~ #surfour{
+            z-index: 9;
+        }
+
+        #suri1:checked ~  .surnav #surdot1,
+        #suri2:checked ~ .surnav #surdot2,
+        #suri3:checked ~ .surnav #surdot3,
+        #suri4:checked ~ .surnav #surdot4{
+            background: white;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="surcontainer">
+        <input type="radio" name="images" id="suri1" checked>
+        <input type="radio" name="images" id="suri2">
+        <input type="radio" name="images" id="suri3">
+        <input type="radio" name="images" id="suri4">
+
+        <div class="surslide_img" id="surone">
+            <img src="https://content.shop4reebok.com/static/hero/Sneeker_Fest_1920x800_091221_2.jpg"/>
+
+            <label  for="suri4"  class="surpre"></label>
+            <label  for="suri2"  class="surnxt"></label>
+        </div>
+     
+
+        <div class="surslide_img" id="surtwo">
+            <img src="https://content.shop4reebok.com/static/hero/RBK_Floatride_1920x800_221121.jpg"/>
+
+            <label  for="suri1"  class="surpre"></label>
+            <label  for="suri3"  class="surnxt"></label>
+    
+        </div>
+
+       
+        <div class="surslide_img" id="surthree">
+            <img src="https://content.shop4reebok.com/static/hero/RBK_New_Arrivals_1920x800_161121.jpg"/>
+
+            <label  for="suri2"  class="surpre"></label>
+        <label  for="suri4"  class="surnxt"></label>
+        </div>
+
+        
+
+        <div class="surslide_img" id="surfour">
+            <img src="https://content.shop4reebok.com/static/hero/RBK_Outlet_1920x800_Homepage.jpg"/>
+
+            <label  for="suri3"  class="surpre"></label>
+            <label  for="suri1"  class="surnxt"></label>
+        </div>
+
+        <div class="surnav">
+     <label class="surdots" id="surdot1" for="suri1"></label>
+     <label class="surdots" id="surdot2" for="suri2"></label>
+     <label class="surdots" id="surdot3" for="suri3"></label>
+     <label class="surdots" id="surdot4" for="suri4"></label>
+        </div>
+       
+    </div>
+
+    
+</body>
+</html>
