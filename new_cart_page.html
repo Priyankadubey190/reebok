@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main_container_cart{
+           width: 85%;
+           
+           margin: auto;
+           box-sizing: border-box;
+           
+        }
+        #sub_main_container_cart{
+            display: flex;
+            
+        }
+        #firstdiv_cartpage{
+            width: 70%;
+            height: 100%;
+            margin-top: 30px;
+           
+        }
+        #sub_first_div_flex{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            
+        }
+        #update_cart_item{
+            width: 10%;
+            height: 20px;
+            margin: 20px 30px 0px 30px;
+        }
+        #remove_cart_item{
+            border: transparent;
+            background-color: white;
+            color: rgb(90, 86, 86);
+            font-weight: bold;
+        }
+        #remove_cart_item:hover{
+            text-decoration: underline;
+        }
+        #wishlist_cart_item{
+            border: transparent;
+            background-color: white;
+            color: rgb(90, 86, 86);
+            font-weight: bold;
+        }
+        #wishlist_cart_item:hover{
+            text-decoration: underline;
+        }
+        #sub_first_div_flex>img{
+            width: 20%;
+            height: 80%;
+            
+        }
+        #update_cart_item{
+            background-color: white;
+            border: 1px solid gray;
+            padding: 10px 25px 10px 20px;
+            height: 30px;
+            
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        #name_cart_page{
+            padding-left: 20px;
+            
+        }
+        #div_remove_wishlist_flex{
+            padding: 10px;
+            margin-top: 25%;
+        }
+        #seconddiv_cartpage{
+            width: 27%;
+            height: 20%;
+            margin-left: 15px;
+        }
+        #line_balck_order_summary>hr{
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+        #subtotal_order_summary_flex{
+            display: flex;
+            
+        }
+        #order_discounts_cart_flex{
+            display: flex;
+            
+        }
+        #total_order_cart_flex{
+            display: flex;
+            
+        }
+        #seconddiv_cartpage>h3{
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+        #subtotal_order_summary_flex>p{
+            padding-left: 10px;
+            padding-right: 10%;
+            margin-top: 0px;
+        }
+        #order_discounts_cart_flex>p{
+            padding-left: 10px;
+            padding-right: 25%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #order_discounts_cart_flex>h3{
+            margin-top: 0px;
+        }
+        #total_order_cart_flex>h3{
+            padding-left: 10px;
+            padding-right: 40%;
+            margin-top: 0px;
+        }
+        #total_order_cart_flex>h2{
+            margin-top: 0px;
+        }
+        #main_container_cart>p{
+            margin-bottom: 0px;
+        }
+        #checkout_btn_cart_page{
+            width: 100%;
+            height: 45px;
+            font-size: 20px;
+            color: white;
+            z-index: -1;
+            border: 1px solid;
+            background-color: rgb(199,20,50);
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        #checkout_btn_cart_page:hover{
+            background-color: rgb(235, 15, 88);
+        }
+        #p_tag_cart_order{
+            margin-top: 0px;
+            padding-left: 45%;
+        }
+        #color_blue_p_tag{
+            color: rgb(24,119,242);
+        }
+        #order_summary_div_cartpage{
+            background-color: rgb(230, 227, 227);
+        }
+    </style>
+</head>
+<body>
+    <div id="main_container_cart">
+        <h2>YOUR SHOPPING CART</h2>
+        <p>Item Details</p>
+        <div id="sub_main_container_cart">
+            <div id="firstdiv_cartpage"></div>
+
+            <div id="seconddiv_cartpage">
+                <h3>Order Summary</h3>
+                <div id="line_balck_order_summary"><hr/></div>
+
+                <div id="order_summary_div_cartpage">
+                    <div id="subtotal_order_summary_flex">
+                        <p>Merchandise <br/> Subtotal <br/> (Incl Item Discounts)</p>
+                        <h3>₹<span id="update_price"></span>.00</h3>
+                    </div>
+                    <div id="order_discounts_cart_flex">
+                        <p>Order Discounts</p>
+                        <h3>-₹.00</h3>
+                    </div>
+                    <hr>
+                    <div id="total_order_cart_flex">
+                        <h3>Total</h3>
+                        <h2>₹<span id="update__total_price"></span>.00</h2>
+                    </div>
+                    <div><p id="p_tag_cart_order">(Inclusive of all taxes)</p></div>
+                </div>
+                <button id="checkout_btn_cart_page">checkout</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var arr=JSON.parse(localStorage.getItem("cartproducts")) || [];
+    // console.log(arr);
+    display(arr);
+    function display(arr){
+
+        document.querySelector("#firstdiv_cartpage").innerHTML="";
+
+        var sum=0;
+        for(var i=0;i<arr.length;i++){
+            sum+=Number(arr[i].strikedoffprice);
+        }
+        document.querySelector("#update_price").innerHTML=sum;
+        document.querySelector("#update__total_price").innerHTML=sum;
+
+        arr.map(function(ele,index){
+            var ptag=document.createElement("p");
+            ptag.textContent="Item Details";
+            
+
+            var hr=document.createElement("hr");
+            
+            var days=document.createElement("p");
+            days.textContent="Ships In 2-7 Days.";
+            days.setAttribute("id","color_blue_p_tag");
+
+            var div=document.createElement("div");
+            div.setAttribute("id","sub_first_div_flex");
+
+            var img=document.createElement("img");
+            img.setAttribute("src",ele.image_url);
+            
+            var price=document.createElement("p");
+            price.textContent=ele.price;
+
+            var strikedoffprice=document.createElement("p");
+            strikedoffprice.textContent=ele.strikedoffprice;
+            
+            var div1=document.createElement("div");
+            var name=document.createElement("p");
+            name.textContent=ele.name;
+            name.setAttribute("id","name_cart_page");
+
+            var div2=document.createElement("div");
+            div2.setAttribute("id","div_remove_wishlist_flex");
+
+            var remove=document.createElement("button");
+            remove.textContent="Remove Item";
+            remove.setAttribute("id","remove_cart_item");
+            remove.addEventListener("click", function(){
+                removeitem(index);
+            });
+            
+            var wishlist=document.createElement("button");
+            wishlist.textContent="Add to Wishlist"
+            wishlist.setAttribute("id","wishlist_cart_item");
+
+            var update=document.createElement("button");
+            update.textContent="Update";
+            update.setAttribute("id","update_cart_item");
+            
+            div2.append(remove,wishlist);
+            div1.append(name,div2);
+
+            div.append(img,div1,update,strikedoffprice);
+
+            document.querySelector("#firstdiv_cartpage").append(hr,days,div);
+        });
+    }
+
+    function removeitem(index){
+    
+        arr.splice(index,1);
+        localStorage.setItem("cartproducts",JSON.stringify(arr));
+        display(arr);
+    }
+
+    document.querySelector("#checkout_btn_cart_page").addEventListener("click", checkoutFun)
+    function checkoutFun(){
+        window.location.href="delivery.html";
+    }
+</script>
