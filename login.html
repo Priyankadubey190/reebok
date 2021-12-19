@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <script src="https://kit.fontawesome.com/5c6293b5b4.js" crossorigin="anonymous"></script>
+    <title>Reebok login/register</title>
+    <link rel="icon" href="reebok-3.png" type="image/jpg">
+    <style>
+
+/* this is shakti's stylesheet */
+#maincontainer{
+      width: 100%;
+     
+
+  }
+  .dev_container{
+            display: flex;
+            color: white;
+            background-color: black;
+            width: 100%;
+            height: 70px;
+            column-gap: 100px;
+            font-size: 15px;
+            font-weight: bold;
+            
+           
+           
+           
+           
+        }
+        .dev_container>div{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            
+            column-gap: 50px;
+          
+           margin-top: 22px;
+           margin-left: 150px;
+        }
+        #dev_box1{
+            display: flex;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            height: 40px;
+            margin-top: 0px;
+            justify-content:space-around;
+            
+           
+            column-gap: 10px;
+        }
+        
+        #dev_box3
+{
+    
+    font-size: 15px;
+    margin-top: 0.5%;
+    
+    
+
+            /* margin-left: 400px; */
+        
+        }
+    
+        #dev_box2{
+            /* margin-left: 550px; */
+            margin-top: 0.5%;
+            font-size: 15px;
+            text-decoration: none;
+            
+        }
+        #dev_box4{
+            color: red;
+            font-size: 15px;
+        }
+        #dev_box41{
+            color: red;
+            font-size: 15px;
+        }
+        #dev_box5{
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+        .dev_hr{
+        margin-top: 0px;
+        color: black;
+        margin-bottom: -1.51px
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+
+        .pre-log-con-1{
+            margin: auto;
+            width: 93%;
+            padding: 20px 35px 0px;  
+            
+        }
+        .pretext{
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .ptext{
+            font-family: sans-serif;
+        }
+       .pre_log_container{
+           width: 100%;
+           margin: auto;
+           display: grid;
+           grid-template-columns: 35% 35% 26%;
+           grid-template-rows: 650px;
+           grid-gap: 10px;
+       } 
+       .col-1{
+           border-right: 1px solid black;
+           
+       }
+       .col-2{
+           
+           padding: 10px;
+       }
+       .pre-1-m{
+           
+           width: 95%;
+           height: 35px;
+           padding: 10px;
+           box-sizing: border-box;
+       }
+       .pre-bot-1{
+        margin-bottom: 20px;
+       }
+       .pre-bot-2{
+           margin-bottom: 15px;
+       }
+       .mf-btn{
+           color: red;
+           background-color: white;
+           border-radius: 50%;
+           height: 20px;
+           width: 20px;
+           text-align: center;
+           line-height: 20px;
+       }
+       .pre-f-btn{
+           background-color: red;
+           text-decoration: none;
+           padding: 10px;
+           color: white;
+           font-weight: bold;
+           font-family: sans-serif;
+           border-radius: 10px;
+           box-sizing: border-box;
+           display: inline-block;
+           text-decoration: none;
+           
+       }
+       .pre-mar{
+           margin-top: 30px;
+       }
+       .pre-log{
+           font-family: sans-serif;
+           font-size: 30px;
+           letter-spacing: 2px;
+       }
+       .pre-sp{
+           margin-right: 20px;
+       }
+       .pre-bl{
+           
+           margin-top: 40px;
+       }
+       .pre-fb{
+           height: 60px;
+           width: 50px;
+           
+       }
+       #sign_up_footer_button{
+           background-color: #cc0526;
+           color: white;
+       }
+
+
+
+        /* Bhawani's css part is here */
+
+        #main_container_div{
+        background-color: rgb(47,47,43);
+        font-family: NeuePlakTextRegular;
+    }
+    #footer_nav{
+        display: flex;
+        width: 75%;
+        color: #ffffff;
+        font-size: 21px;
+        background-color: black;
+        margin: auto;
+    }
+    #footer_nav>div{
+        margin-right: 2px;
+        width: 100%;
+        color: #ffffff;
+        background-color: rgb(47,47,43);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    #nav_one{
+        padding-left: 155px;
+        padding-right: 20px;
+        color: white;
+    }
+    #nav_two{
+        padding: 0px 20px;
+    }
+    #nav_three{
+        padding-right: 261px;
+        padding-left: 20px;
+    }
+    #footer_body{
+        width: 100%;
+        height: 62vh;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        
+        
+        background-color: rgb(52,53,48);
+    }
+    #footer_body>div{
+        padding-top: 15px;
+        line-height: 25px;
+        color: white;
+        line-height: 37px;
+        
+    }
+    #fb_one{
+        margin-left: 155px;
+    }
+    #fb_one>div>p{color: rgb(92, 89, 89);}
+    #fb_two{
+        margin-left: 120px;
+    }
+    #fb_two>div>p{color: gray;}
+    #fb_three{
+        margin-left: 80px;
+    }
+    #fb_three>div>p{color: gray;}
+    #fb_four{
+        margin-left: 70px;        
+    }
+    #fb_four>p{color: gray;}
+
+    #footer_body>div>div>p{
+        margin-bottom: 0px;
+    }
+
+    #btn_footer_97{
+        padding: 1px 24px;
+        margin-left: 110px;
+        margin-top: 20px;
+        background-color: white;
+        border: 1px solid white;
+    }
+    #facebook_button_footer{
+        display: flex;
+        height: 20px;
+        padding: 1px 10px;
+        margin-left: 110px;
+        border: transparent;
+       
+        background-color: rgb(24,119,242);
+        color: white;
+    }
+    #facebook_logo_footer{
+        border-radius: 50px;
+        margin-right: 7px;
+        padding: 3px;
+        font-size: 8px;
+        color: rgb(24,119,242);
+        background-color: white;
+    }
+    #facebook_para_footer{
+       margin-top: 1px;
+    }
+    .anchor_tag_footer_page{
+        text-decoration: none;
+        color: white;
+        font-family: NeuePlakTextRegular;
+    }
+    .anchor_tag_footer_page:hover{
+        text-decoration: underline;
+    }
+    #sign_up_footer{
+        display: flex;
+       
+        /* margin: auto; */
+      
+    }
+    #red_footer_15{
+        color: rgb(204,5,38);
+    }
+    #displayflex{
+        display: flex;
+        width: 100%;
+        height: 150px;
+        justify-content:center;
+        background-color: rgb(64,64,58);
+    }
+    #sign_up_footer_h1{
+        /* padding-left: 430px;
+        padding-top: 35px;
+        padding-bottom: 25px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        /* margin: auto; */
+        /* margin-left: -60px; */
+        margin-top: 12%;
+       
+    }
+    #sign_up_footer_button{
+       /* margin-right: 40%; */
+       margin-left: 40px;
+        margin-top: 17%;
+        color: white;
+        border-radius: 10px;
+        border: transparent;
+        background-color: rgb(204,5,38);
+        height: 40px;
+        padding: 10px 40px 45px 20px;
+        font-size: 23px;
+        text-align: center;
+    }
+    #sign_up_footer_button:hover{
+        background-color: rgb(216, 31, 62);
+    }
+    #right_arrow_footer{
+        border-radius: 50%;
+        padding: 5px;
+        margin-left: 15px;
+        /* font-size: 20px; */
+        color: rgb(204,5,38);
+        background-color: white;
+    }
+    #sign_up_footer_button_p_tag{
+        margin: auto;
+    }
+    #footer_img_bottom{
+        width: 40%;
+        height: 80px;
+            
+    }
+    #footer_img_bottom_div{
+        /* background-color: rgb(52,53,48); */
+        background-color: rgb(47,47,43);
+        /* margin-left: 20%; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    #footer_bottom_text{
+        display: flex;
+        /* background-color: rgb(52,53,48); */
+        background-color: rgb(47,47,43);
+        /* padding-left: 330px; */
+        color: rgb(175, 179, 174);
+        font-family: footer_bottom_text_image;
+        justify-content:center;
+        margin-top: 140px;
+        font-size: 20px;
+    }
+    #footer_bottom_text_image{
+        margin-top: 10px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+
+    /* nav bar mens cursor */
+    .saj-movetomen,.store,.saj-movetowomen,.saj-movetokids,.saj-reebok{
+        cursor: pointer;
+    }
+    
+       
+
+
+
+    </style>
+</head>
+
+<body>
+
+ <!-- from here shkati code -->
+ <div id="dev_box1">
+    <div></div>
+    <div id="dev_box2">
+        <!-- <h6 id="dev_box2">ALSO VISIT<h6>
+            <h3>adidas</h3> -->
+            <span><a style="color: white; text-decoration: none;font-size: 14px;padding-right: 10px;" href="">ALSO VISIT</a><a style="color: white; text-decoration: none;font-size: 22px;" href="">adidas</a></span>
+    </div>
+<!-- <div>
+ <h3>adidas</h3>
+</div> -->
+<div id="dev_box3">
+<span><a style="color: white; text-decoration: none;" href="signup.html">SIGNUP</a> <a style="color: white; text-decoration: none;" href="login.html">|LOGIN|</a></span>
+</div>
+</div>
+
+<hr class="dev_hr">
+
+    <div class="dev_container">
+        
+     
+     
+       <div>
+           <div class="saj-reebok">
+               <img height="70%" src="https://content.shop4reebok.com/static/header/vector_logo_white_145x19_website.png" alt="Reebok india">
+           </div>
+         
+           <div class="saj-movetomen">MEN
+             
+
+           </div>
+             
+
+           <div class="saj-movetowomen">WOMEN</div>
+           <div class="saj-movetokids">KIDS</div>
+           <div>EXPLORE </div>
+           <div id="dev_box4" class="sale">SALE </div>
+           <div id="dev_box4" class="store">STORIES OPEN NEAR YOU</div>
+           <div> 
+               <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+             </form>
+          <div id="dev_box5"><i style="font-size:26px" class="fa">&#xf07a;</i> </div>
+          
+        </div>
+       </div>
+    </div>
+
+
+
+    <div class="pre-log-con-1">
+        <h2 class="pre-log">SIGN IN</h2>
+        <div class="pre_log_container">
+            <div class="col-1">
+                <h3 class="pretext">REGISTERED MEMBERS</h3>
+                <P class="ptext">If you've created an account with us, please enter your email address and password.</P>
+                <form  id="myform">
+                    <input id="email1" type="text" placeholder="Enter your Email" class="pre-1-m pre-bot-1">    
+                    <input id="password1" type="password" placeholder="Enter your password" class="pre-1-m pre-bot-1">
+                    
+                    <input type="submit" id="sign_up_footer_button" value="Sign In">
+                    <p class="pre-mar">Forgot your password?</p>
+                    <input type="checkbox"><span>Continue as a Guest User</span>
+                </form>
+            </div>
+            <div class="col-1">
+                <h3 class="pretext">NEW CUSTOMERS</h3>
+                <P class="ptext">If you don't have an account with us, or are just unsure then enter your information below.</P> 
+                <form action="" class="form"></form>
+                    <input id="firstname" type="text" placeholder="First Name" class="pre-1-m pre-bot-2">
+                    <input id="lastname" type="text" placeholder="Last Name" class="pre-1-m pre-bot-2">
+                    <input id="email2" type="text" placeholder="Email" class="pre-1-m pre-bot-2">
+                    <input id="password2" type="password" placeholder="Password" class="pre-1-m pre-bot-2">
+                    <p>password should have at least a minimum of one letter, one number and is at least 8 characters long </p>
+                    <input id="pwdagain" type="password" placeholder="Re-type Password" class="pre-1-m pre-bot-2">
+                    <input id="radiotype" name="radiomail" type="radio"><span class="pre-sp">Mail</span><input id="radiotype" name="radiomail" type="radio"><span>Female</span>
+                    <br>
+                    <button id="sign_up_footer_button" onclick="newuserLogin()"><p id="sign_up_footer_button_p_tag">Sign In<i id="right_arrow_footer" class="fas fa-chevron-right"></i></p></button>
+                </form>
+            </div>
+            <div class="col-2">
+                <h3 class="pretext">USE YOUR SOCIAL NETWORK</h3>
+                <P class="ptext">Sign in using your existing Facebook information </P>  
+               
+                <img width="40px" height="40px" src="https://blog.logomyway.com/wp-content/uploads/2019/09/f-logo-icon.jpg" alt=""/>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <!-- Bhawani's code starts from here -->
+     <div id="main_container_div">
+
+        <div id="footer_nav">
+            <div id="nav_one">
+                <p>Free Shipping + Free 30-Day Returns*</p>
+            </div>
+            <div id="nav_two">
+                <p>Call Us Between 8AM To 8PM : 1-800-120-4400</p>
+            </div>
+            <div id="nav_three">
+                <p>Email Us: Customer.Care@Reebok.Com</p>
+            </div>
+        </div>
+    
+        <div id="footer_body">
+            <div id="fb_one">
+                <div>
+                    <p >MEN</p>
+                    <a class="anchor_tag_footer_page" href="" title="Men Footwear">Footwear</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Men Clothing">Clothing</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Men Accessories">Accessories</a>
+                </div>
+                <div>
+                    <p>WOMEN</p>
+                    <a class="anchor_tag_footer_page" href="" title="Women Footwear">Footwear</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Women Clothing">Clothing</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Women Accessories">Accessories</a>
+                </div>
+                <div>
+                    <p>KIDS</p>
+                    <a class="anchor_tag_footer_page" href="" title="KIDS Footwear">Footwear</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="KIDS Clothing">Clothing</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="KIDS Accessories">Accessories</a>
+                </div>
+            </div>
+            <div id="fb_two">
+                <div>
+                    <p>FITNESS</p>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Running">Running</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Training">Training</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Classics">Classics</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Walking">Walking</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Mixed Martial Arts">Mixed Martial Arts</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Swimming">Swimming</a>
+                </div>
+            </div>
+            <div id="fb_three">
+                <div>
+                    <p>QUICK SHOP</p>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Running">Running</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Training">Training</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Classics">Classics</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Walking">Walking</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Mixed Martial Arts">Mixed Martial Arts</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP SALE">SALE</a>
+                </div>
+                <div>
+                    <p>NEW ARRIVALS</p>
+                    <a class="anchor_tag_footer_page" href="" title="New Arrivals">New Arrivals</a>
+                </div>
+            </div>
+            <div id="fb_four">
+                <p>CUSTOMER SERVICE</p>
+                <a class="anchor_tag_footer_page" href="" title="">Contact Us</a><br/>
+                <a class="anchor_tag_footer_page" href="" title="">My Account</a><br/>
+                <a class="anchor_tag_footer_page" href="" title="">*Privacy Policy</a><br/>
+                <a class="anchor_tag_footer_page" href="" title="">*Terms And Conditions</a>
+            </div>
+            <div>
+                <button id="btn_footer_97">97k</button><br/>
+                <button id="facebook_button_footer"><i id="facebook_logo_footer" class="fab fa-facebook-f"></i><p id="facebook_para_footer">share</p></button>
+            </div>
+        </div>
+    <div id="displayflex">
+        <div id="sign_up_footer">
+            <h1 id="sign_up_footer_h1">SIGN UP AND GET <span id="red_footer_15">15% OFF.</span></h1>
+           
+        </div>
+        <div>
+            <button id="sign_up_footer_button"><p id="sign_up_footer_button_p_tag">Sign Up <i id="right_arrow_footer" class="fas fa-chevron-right"></i></p></button>
+        </div>
+     </div>
+        <div id="footer_img_bottom_div">
+            <img id="footer_img_bottom" src="https://content.shop4reebok.com/static/footer/Payment_Icon_A.jpg" alt="img">
+        </div>
+       
+        <div id="footer_bottom_text">
+            <p>@ 2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD.</p>
+            <img id="footer_bottom_text_image" src="https://content.shop4reebok.com/static/footer/ADI_SPORTS_LOGO.jpg" alt="logo">
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var arr=JSON.parse(localStorage.getItem("signIn")) || [];
+    var arr1=JSON.parse(localStorage.getItem("newsignIn")) || [];
+document.querySelector("#myform").addEventListener("submit", myfunction);
+
+function myfunction(event){
+   event.preventDefault();
+   
+   var email=document.querySelector("#email1").value;
+        var password=document.querySelector("#password1").value;
+
+    if(email === "masai@gmail.com"  && password === "123456"){
+
+        alert("Signin Successful");
+
+        window.location.href = "logout.html"
+    }
+    else{
+        alert("invalid Username and Password");
+    }
+ 
+
+
+}
+
+function newuserLogin(){
+            var firstname=document.querySelector("#firstname").value;
+            var lastname=document.querySelector("#lastname").value;
+            var email=document.querySelector("#email2").value;
+            var password=document.querySelector("#password2").value;
+            var pwdagain=document.querySelector("#pwdagain").value;
+            var radiotype=document.querySelector("#radiotype").value;
+            // var radiofemail=document.querySelector("#radiofemail").value;
+
+            var obj={
+                firstname : firstname,
+                lastname : lastname,
+                email : email,
+                password : password,
+                pwdagain : pwdagain,
+                radiotype : radiotype,
+               
+            }
+            arr1.push(obj);
+            localStorage.setItem("newsignIn", JSON.stringify(arr));
+
+            alert("User signUp Successful! Now Signin");
+
+            document.querySelector("#firstname").value="";
+            document.querySelector("#lastname").value="";
+            document.querySelector("#email").value="";
+            document.querySelector("#password").value="";
+            document.querySelector("#pwdagain").value="";
+            document.querySelector("radiomail").value="";
+            
+            
+        }
+
+
+
+
+        document.querySelector("#dev_box5").addEventListener("click", cartfunction);
+
+function  cartfunction(){
+    window.location.href = "cart.html"
+}
+
+ // moving location code here from navbar
+ document.querySelector(".saj-movetowomen").addEventListener("click",womens)
+
+
+function womens(){
+    window.location.href = "women.html"
+}
+
+document.querySelector(".saj-movetokids").addEventListener("click",kids)
+
+
+function kids(){
+    window.location.href = "kids.html"
+}
+document.querySelector(".saj-movetomen").addEventListener("click",men)
+
+
+function men(){
+    window.location.href = "mens.html"
+}
+
+
+   
+
+document.querySelector(".store").addEventListener("click",store);
+
+function store(){
+    window.location.href ="store.html"
+}
+
+
+document.querySelector(".saj-reebok").addEventListener("click",reebok);
+
+function reebok(){
+    window.location.href = "Reebok.html"
+}
+
+document.querySelector(".sale").addEventListener("click",sale);
+
+function sale(){
+    window.location.href = "sale.html"
+}
+   
+</script>

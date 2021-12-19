@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/3ee889e268.js" crossorigin="anonymous"></script>
+   
+    <style>
+
+        #saj-gatewaycontainer{
+            width: 65%;
+            /* border: 1px solid red; */
+            margin: auto;
+            height: 1000px;
+            margin-top: 50px;
+            display: flex;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        }
+        #saj-gateway1{
+            width: 35%;
+            /* border: 1px solid black; */
+            height: 100%;
+            border-left: 9px solid #488cdc;
+            border-radius: 13px;
+        }
+        #saj-gateway2{
+            width: 60%;
+            /* border: 1px solid black; */
+            height: 100%;
+            overflow: scroll;
+            /* border-left: 9px solid #488cdc; */
+        }
+        #saj-div1{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid brown; */
+            height: 75px;
+            margin-top: 50px;
+            /* justify-content: space-between; */
+        }
+        #saj-back{
+            width: 40%;
+            /* border: 1px solid green; */
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #saj-logo{
+            width: 30%;
+            /* border: 1px solid red; */
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        #saj-icon{
+            width:10%;
+            /* border: 1px solid red; */
+            padding-top: 25px;
+            padding-left: 15px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        #saj-totalamount{
+          width: 80%;
+          /* border: 1px solid blue; */
+          height: 200px;
+          margin: auto;
+          margin-top: 80px;
+        }
+#saj-bottomimg{
+width: 80%;
+margin: auto;
+height: 270px;
+/* border: 1px solid red; */
+margin-top: 270px
+}
+#saj-lang{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px; 
+}
+#saj-left{
+    width: 50%;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+#saj-right{
+    width: 20%;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+#saj-form{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+   
+    margin-top: 50px;
+    border-left: 10px solid  #488cdc ;
+
+}
+#expiry-cvvlabel{
+    width: 68%;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: space-around; */
+    font-size: 20px;
+    margin-left: 60px;
+    
+}
+#expiry-cvvinput{
+    width: 85%;
+    margin-left: 60px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+#saj-n1{
+    /* text-align: left; */
+    width: 62%;
+    /* margin-left: 50px; */
+}
+#myform{
+    line-height: 30px;
+}
+#saj-cardnum{
+    width: 78%;
+    font-size: 32px;
+    padding: 10px;
+}
+#saj-expiry{
+    width: 60%;
+    font-size: 35px;
+    padding: 14px;
+}
+#saj-cvv{
+    width: 78%;
+    font-size: 35px;
+    padding: 14px;
+
+}
+#saj-cardname{
+    width: 78%;
+    font-size: 35px;
+    padding: 10px;
+}
+#saj-submit{
+    width: 80%;
+    font-size: 16px;
+    padding: 20px 20px;
+    background-color: #488cdc ;
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.margin-left{
+    margin-left: 60px;
+}
+.fontsize{
+    font-size: 25px;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+  
+  <div id="saj-gatewaycontainer">
+      <div id="saj-gateway1">
+          <div id="saj-div1">
+              <div id="saj-icon">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+          <div id="saj-back">
+              <p>Back</p>
+            </div>
+          <div id="saj-logo">
+              <img height="100%" width="100%" src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkVEMEQ3RkQ3NjQ3MTFFQTk0MTBDNUZGMkRBOTYwMDIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkVEMEQ3RkU3NjQ3MTFFQTk0MTBDNUZGMkRBOTYwMDIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCRUQwRDdGQjc2NDcxMUVBOTQxMEM1RkYyREE5NjAwMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCRUQwRDdGQzc2NDcxMUVBOTQxMEM1RkYyREE5NjAwMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpsRoJoAAANrSURBVHja7JhtaM1RHMfvf7bZxYx5auZxrLXJY2wvqL3whpJYyLQXtLDwAkUpZigkloTEvGDERixpLS1eKFIK24tNlsd289TWyNid3b/vj++f0+l/7f7vqPvinPrsnHsev+d3fud3/s2ybdsXyynOF+PJCDQCjUAj0AiM9cSnrhIE5Cf5DsqkrTdcUgJoBRc8rL+EYwr0+ePZby5IA2eABfLAbsuygui0H/ks/C4CyeANeIH6StSPQLkEjANvwStudjQYBTaBdHCKbZLmgC1gAKgAN0ESx8jmfJh3J7JOrFHu7OC1WE2zjPy5CjIVy75j/ggkgg/8/UXpk8D8PKhmuZP9Z/N3N2hjuQDMYHke6M9yy08dFPMMvAczwQpQyiMXSz4BPey3iIOngc0sD1ImPeqcHKhheQJ/7wUP6D5Ouse2Vcx7mDfLnLJmnDJhKxetAntkMDrIhMPkMsHsciTZ4CDqG3gkkoaCKeA4xztzJjJPZf6N61iqC2qXVTZ1iXMuUJ3UOR5pmAgOKSafpLS3g+ecJJl+JfUh1jfQt2yNZgpwjvgrT0zKy0A+y7mqHvWSrAYpqBAB7bDWCeTbwBrUFeN3FsrLwWAOfor6z6jPkT5gDOeRRYO8UOm0ngg/y/aHFLmDGzmNeWowz1hav439Nvx2hTChYySok91FEWY8h7m/YTmLYBcW/S2VRxagNULoEwq3wK9hfY7DMo/4rFhyCOiScIa2jnitvx9MBlNBDm91JgYnsb0DfKJwJ93npWrpRctwxto0XrAMuVyYW3y8Hw3SRD9u5I3+Y0EXy0j4yKLIPAbz7HCGAAcYSrp4sbbTGiJsPEX5XcbeArXgDqODNx/Q/C2FQks4sX5b5ZUppqjDLu3CS0aJ3EjW9yRQE+qnhQrBXU3EbT514kIn6RoXwUKvBvIiSsJGGX3NZuCtZdjw8T0tVF4H4RhfmahvcSTC5IPgiPISqFTwyJfKxwWYzg8HeQWuKP1K/4tApHU8Hl3YNd68geCc1nZdWV9u7D6+HB/B1n8mkF8jbk6+nu2LXdou0+JuaSNfkno+b9EJ5OdVIIy4+exT7dJ2I8LYvJKb3yXxNuKXRIl/sru1DBlqYxX61vP9LecHajfbgrSQl5TPaPCYr4ZrQLbMf7eMQCPQCDQCjcA+pR8CDABQNhyeJ12ypgAAAABJRU5ErkJggg==">
+          </div>
+
+
+          </div>
+          <div id="saj-totalamount">
+<h1 style="color: #343434;">Enter new card</h1>
+<p style="font-size: 18px;">Total Payable Amount:<b id="totalsum">₹</b></p>
+<p>Transaction Id: 67024100272</p>
+          </div>
+          <div id="saj-bottomimg">
+<img height="100%" width="100%" src="https://www.linkpicture.com/q/download_308.jpg" />
+        </div>
+      </div>
+      <div id="saj-gateway2">
+     <div id="saj-lang">
+         <div id="saj-left">
+             <h3 style="color: #998e95;">CARDS (CREDIT/DEBIT)</h3>
+         </div>
+         <div id="saj-right">
+             <select style=" font-size: 20px; border: transparent;">
+                 <option value="">English</option>
+                 <option value="">हिन्दी </option>
+             </select>
+         </div>
+     </div>
+    <div id="saj-form">
+        <form  id="myform" >
+            <label class="margin-left fontsize" >New Card</label><br>
+            <input class="margin-left" id="saj-cardnum" type=" number" placeholder="Enter 16-digit Card Number">
+        
+        <div id="expiry-cvvlabel">
+            <div  id="saj-n1">
+                <label class="fontsize" >Expiry</label>
+            </div>
+            <div id="saj-n2"> <label class="fontsize">CVV</label></div>
+        </div>
+        <div id="expiry-cvvinput">
+            <div> <input id="saj-expiry" type="text" placeholder="MM/YY"></div>
+            <div> <input id="saj-cvv" type="password" placeholder="Enter CVV"></div>
+        </div><br><br>
+
+        <label class="margin-left fontsize">Name on Card</label><br>
+            <input class="margin-left" id="saj-cardname" type=" text" placeholder="Enter name as on card"><br><br>
+        
+        <input class="margin-left" type="checkbox"><span style="font-size:18px;" >Save this option for securely for faster payment </span><br><br>
+
+
+        <input   class="margin-left fontsize" id="saj-submit" type="submit"  value="PROCEED">
+        
+        </form>
+    </div> 
+       
+      </div>
+    
+  </div>
+</body>
+</html>
+<script>
+    var sum = JSON.parse(localStorage.getItem("sum"));
+    // console.log(sum)
+    document.querySelector("#totalsum").textContent ="₹"+sum;
+
+document.querySelector("#saj-icon").addEventListener("click",goback)
+document.querySelector(" #saj-back").addEventListener("click",goback)
+
+function goback(){
+    window.location.href = "payment.html";
+}
+
+
+
+document.querySelector("#saj-logo").addEventListener("click" ,reebok)
+
+function  reebok(){
+    window.location.href = "reebok.html"
+}
+
+    document.querySelector("#myform").addEventListener("submit",myfunction)
+
+    function myfunction(event){
+        event.preventDefault();
+        
+
+        
+     var cardnum = document.querySelector("#saj-cardnum").value;
+     var expiry = document.querySelector("#saj-expiry").value;
+     var cvv = document.querySelector("#saj-cvv").value;
+     var cardname = document.querySelector("#saj-cardname").value;
+
+     if(cardnum.length  === 16 && expiry === "0000" && cvv === "000" && cardname === "reebok"){
+        
+        
+         window.location.href = "otp.html"
+     }
+     else{
+         alert("Invalid user credential, please provide valid information")
+     }
+
+    }
+</script>

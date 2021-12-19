@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All kids products</title>
+    <link rel="icon" href="reebok-3.png" type="image/jpg">
+    <script src="https://kit.fontawesome.com/577c169d0f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3ee889e268.js" crossorigin="anonymous"></script>
+    <style>
+/* this is shakti's stylesheet */
+#maincontainer{
+      width: 100%;
+     
+
+  }
+  .dev_container{
+            display: flex;
+            color: white;
+            background-color: black;
+            width: 100%;
+            height: 70px;
+            column-gap: 100px;
+            font-size: 15px;
+            font-weight: bold;
+            
+           
+           
+           
+           
+        }
+        .dev_container>div{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            
+            column-gap: 50px;
+          
+           margin-top: 22px;
+           margin-left: 150px;
+        }
+        #dev_box1{
+            display: flex;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            height: 40px;
+            margin-top: 0px;
+            justify-content:space-around;
+            
+           
+            column-gap: 10px;
+        }
+        
+        #dev_box3
+{
+    
+    font-size: 15px;
+    margin-top: 0.5%;
+    
+    
+
+            /* margin-left: 400px; */
+        
+        }
+    
+        #dev_box2{
+            /* margin-left: 550px; */
+            margin-top: 0.5%;
+            font-size: 15px;
+            text-decoration: none;
+            
+        }
+        #dev_box4{
+            color: red;
+            font-size: 15px;
+        }
+        #dev_box41{
+            color: red;
+            font-size: 15px;
+        }
+        #dev_box5{
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+        .dev_hr{
+        margin-top: 0px;
+        color: black;
+        margin-bottom: -1.51px
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+
+
+
+
+        #container{
+           width: 100%;
+
+        }
+        #saj-offer{
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: #fbfbfb;
+         float: left;
+
+        }
+        #saj-offer:hover{
+            color: tomato;
+           
+        }
+
+        /* #saj-h1{
+            width: 100%;
+            border: 1px solid red;
+            height: 100px;
+            background-color: #ebebeb;
+        } */
+        #saj-h1{
+            width: 100%;
+            text-align:left;
+            padding-left: 100px;
+            padding-bottom: 150px;
+
+            /* padding-top: 10px; */
+            /* border: 1px solid red; */
+          
+            background-color: #ebebeb;
+            color: #6a6a65;
+            font-size: 35px;
+            height: 30px;
+            float: left;
+            margin-bottom: 50px;
+           
+            
+            
+        
+        }
+
+        #saj-both{
+            width: 80%;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+        }
+        #saj-filter{
+            width: 21%;
+            /* border: 1px solid blue; */
+            margin-right: 4%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #saj-products{
+            width: 75%;
+            /* border: 1px solid brown; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #saj-productdiv{
+            width: 23%;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+        #saj-productdiv:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          
+
+        }
+
+        #saj-productdiv:hover>button{
+        padding:  10px 0px;
+      visibility: visible;
+      cursor: pointer;
+      overflow: hidden;
+                  white-space: wrap;
+      font-size: 25px;
+         
+           background-color: #c71432;
+           color: white;
+           font-weight: bold ;
+        }
+        #saj-addtocart{
+          
+            
+            visibility: hidden;
+        }
+        #saj-img{
+            width: 100%;
+        }
+       
+        /* #saj-productdiv:hover>#saj-addtocart>#saj-addh1{
+           width: 100%;
+           height: 50px;
+         
+           background-color: #c71432;
+
+        } */
+        #saj-smalldiv{
+            display: flex;
+            justify-content:start;
+        }
+        #saj-name{
+            font-size: 23px;
+            margin-left: 15px;
+        }
+        #saj-strike{
+            text-decoration: line-through;
+            font-size: 20px;
+        }
+        #saj-price{
+            font-size: 20px;
+            margin-right: 10px;
+            margin-left: 15px;
+        }
+        #saj-sorting{
+            width: 80%;
+            /* border: 1px solid red; */
+            margin: auto;
+            height: 50px;
+            margin-top: 50px;
+            display: flex;
+            justify-content:space-between;
+        }
+        #saj-selection{
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid black; */
+            font-size: 30px;
+            color: #59403a;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #saj-totalpage{
+            display: flex;
+
+        }
+        #saj-select1{
+            padding: 10Px 15px;
+            border-radius: 6px;
+            font-size: 20px;
+            background-color: #f6f6f6;
+        }
+        #saj-view{
+            font-size: 30px;
+         text-align: center;
+         height: 80%;
+         /* border: 1px solid blue; */
+         margin-top: 5px;
+        }
+        #saj-page{
+            padding: 10px 10px ;
+            background-color: #f6f6f6;
+            font-size: 20px;
+            border-radius: 6px;
+            margin-right: 10 px;
+        }
+        #saj-icon{
+            margin-left: 40px;
+         
+        }
+        #cartitems{
+            font-size: 30px;
+          margin-left: 98%;
+        }
+        #saj-cartlength2{
+            font-size: 14px;
+    font-weight: 900;
+    position:absolute;
+    border: 1px solid #c71432;;
+    border-radius: 60%;
+    height: 20px;
+    width: 15px;
+    color: white;
+    background:#c71432;
+        }
+
+
+
+
+
+
+          /* Bhawani's css part is here */
+
+          #main_container_div{
+        background-color: rgb(47,47,43);
+        font-family: NeuePlakTextRegular;
+        margin-top: 120px;
+    }
+    #footer_nav{
+        display: flex;
+        width: 75%;
+        color: #ffffff;
+        font-size: 21px;
+        background-color: black;
+        margin: auto;
+    }
+    #footer_nav>div{
+        margin-right: 2px;
+        width: 100%;
+        color: #ffffff;
+        background-color: rgb(47,47,43);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    #nav_one{
+        padding-left: 155px;
+        padding-right: 20px;
+        color: white;
+    }
+    #nav_two{
+        padding: 0px 20px;
+    }
+    #nav_three{
+        padding-right: 261px;
+        padding-left: 20px;
+    }
+    #footer_body{
+        width: 100%;
+        height: 62vh;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        
+        
+        background-color: rgb(52,53,48);
+    }
+    #footer_body>div{
+        padding-top: 15px;
+        line-height: 25px;
+        color: white;
+        line-height: 37px;
+        
+    }
+    #fb_one{
+        margin-left: 155px;
+    }
+    #fb_one>div>p{color: rgb(92, 89, 89);}
+    #fb_two{
+        margin-left: 120px;
+    }
+    #fb_two>div>p{color: gray;}
+    #fb_three{
+        margin-left: 80px;
+    }
+    #fb_three>div>p{color: gray;}
+    #fb_four{
+        margin-left: 70px;        
+    }
+    #fb_four>p{color: gray;}
+
+    #footer_body>div>div>p{
+        margin-bottom: 0px;
+    }
+
+    #btn_footer_97{
+        padding: 1px 24px;
+        margin-left: 110px;
+        margin-top: 20px;
+        background-color: white;
+        border: 1px solid white;
+    }
+    #facebook_button_footer{
+        display: flex;
+        height: 20px;
+        padding: 1px 10px;
+        margin-left: 110px;
+        border: transparent;
+       
+        background-color: rgb(24,119,242);
+        color: white;
+    }
+    #facebook_logo_footer{
+        border-radius: 50px;
+        margin-right: 7px;
+        padding: 3px;
+        font-size: 8px;
+        color: rgb(24,119,242);
+        background-color: white;
+    }
+    #facebook_para_footer{
+       margin-top: 1px;
+    }
+    .anchor_tag_footer_page{
+        text-decoration: none;
+        color: white;
+        font-family: NeuePlakTextRegular;
+    }
+    .anchor_tag_footer_page:hover{
+        text-decoration: underline;
+    }
+    #sign_up_footer{
+        display: flex;
+       
+        /* margin: auto; */
+      
+    }
+    #red_footer_15{
+        color: rgb(204,5,38);
+    }
+    #displayflex{
+        display: flex;
+        width: 100%;
+        height: 150px;
+        justify-content:center;
+        background-color: rgb(64,64,58);
+    }
+    #sign_up_footer_h1{
+        /* padding-left: 430px;
+        padding-top: 35px;
+        padding-bottom: 25px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        /* margin: auto; */
+        /* margin-left: -60px; */
+        margin-top: 12%;
+       
+    }
+    #sign_up_footer_button{
+       /* margin-right: 40%; */
+       margin-left: 40px;
+        margin-top: 17%;
+        color: white;
+        border-radius: 10px;
+        border: transparent;
+        background-color: rgb(204,5,38);
+        height: 40px;
+        padding: 10px 40px 45px 20px;
+        font-size: 23px;
+        text-align: center;
+    }
+    #sign_up_footer_button:hover{
+        background-color: rgb(216, 31, 62);
+    }
+    #right_arrow_footer{
+        border-radius: 50%;
+        padding: 5px;
+        margin-left: 15px;
+        /* font-size: 20px; */
+        color: rgb(204,5,38);
+        background-color: white;
+    }
+    #sign_up_footer_button_p_tag{
+        margin: auto;
+    }
+    #footer_img_bottom{
+        width: 40%;
+        height: 80px;
+            
+    }
+    #footer_img_bottom_div{
+        /* background-color: rgb(52,53,48); */
+        background-color: rgb(47,47,43);
+        /* margin-left: 20%; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    #footer_bottom_text{
+        display: flex;
+        /* background-color: rgb(52,53,48); */
+        background-color: rgb(47,47,43);
+        /* padding-left: 330px; */
+        color: rgb(175, 179, 174);
+        font-family: footer_bottom_text_image;
+        justify-content:center;
+        margin-top: 140px;
+        font-size: 20px;
+    }
+    #footer_bottom_text_image{
+        margin-top: 10px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    /* debashish css */
+
+    .heading_div{
+            height: 30px;
+            /* border: 1px solid rgb(132, 0, 255); */
+            display: flex;
+            background-color: rgb(191, 191, 191);
+            margin-bottom: 3%;
+            margin-top: 4%;
+            width: 97%;
+            padding-left: 3%;
+        }
+        /* .heading_left{
+            width: 260px;
+            border: 1px solid rgb(231, 17, 167);
+
+
+        } */
+        .para{
+            margin-top: 0%;
+            padding: 2%;
+            /* border: 1px solid rgb(231, 17, 167); */
+            width: 200%;
+            padding-top: 9%;
+        }
+        .arrow{
+            width: 35px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 70%;
+        }
+        .category_arrow{
+            width: 30px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            /* margin-left: 100%; */
+            /* margin-right: 4%; */
+        }
+       
+        .category_para{
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+        .check_box2{
+            margin-top: -10px;
+        }
+        .product_arrow{
+            width: 35px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 55%;
+        }
+        .category_arrow{
+            width: 30px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 130px;
+        }
+        .view_more{
+            margin-top: -5%;
+        }
+        .size_arrow{
+            width: 25px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 81%;
+        }
+        .sizes{
+            display: grid;
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 30px 30px 30px;
+            grid-row-gap: 20px;
+            grid-column-gap: 20%;
+           
+        }
+        .sizes>div{
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 10px;
+            /* height: 80px; */
+            width: 130%;
+            font-size: 20px;
+            height: 25px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .sizes>div>p{
+            text-align: center;
+            margin-top: 0%;
+            padding-top: 5px;
+            font-size: 17px;   
+        }
+        .size_view_more{
+            margin-top: 4%;
+        }
+        .colour_arrow{
+           
+            width: 25px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 70%;
+        }
+        .colours{
+            display: grid;
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 30px 30px 30px;
+            grid-row-gap: 20px;
+            grid-column-gap: 20%;
+        }
+
+        .colours>div>p{
+            text-align: center;
+            margin-top: 0%;
+            padding-top: 5px;
+            font-size: 17px;
+        }
+        .colours>div{
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 10px;
+            /* height: 80px; */
+            width: 130%;
+            font-size: 20px;
+            height: 25px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .colours_one{
+            background-color: rgb(255, 255, 204);
+        }
+        .colours_two{
+            background-color: black;
+        }
+        .colours_three{
+            background-color:rgb(0, 0, 255) ;
+        }
+        .colours_four{
+            background-color: rgb(179, 0, 0);
+        }
+        .colours_five{
+            background-color: yellow;
+        }
+        .colours_six{
+           background-color: rgb(0, 153, 0);
+        }
+        .colours_seven{
+            background-color: rgb(115, 115, 115);
+        }
+        .colours_eight{
+            background-color: rgb(128, 0, 0);
+        }
+        .collection_view_more{
+            margin-top: -4%;
+        }
+        .collection_arrow{
+            width: 25px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 60%;
+        }
+        .sports_arrow{
+            width: 25px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 73%;
+        }
+        .technology_arrow{
+            width: 25px;
+            /* border: 1px solid yellow; */
+            padding-left: 2%;
+            margin-left: 58%;
+        }
+        .price_check_box{
+            background-color: rgb(219, 216, 216);
+            width: 100%;
+            /* padding-top: 4%; */
+            display: flex;
+            height: 47%;
+
+        }
+        .price_arrow{
+            width: 27px;
+            /* border: 1px solid yellow; */
+            padding-left: 4%;
+            margin-left: 60%;
+            /* height: 70%; */
+            margin-top: -2%;
+            padding-top: 0%;
+            
+        }
+        .price_bar{
+            height: 14px;
+            width: 70%;
+            background-color: rgb(153, 0, 0);
+            margin-left: 6%;
+            margin-top: 0%;
+            border-radius: 5px;
+        }
+        .price{
+           
+           display: flex;
+           margin-top: 10%;
+       }
+       .price_one{
+           height: 30px;
+           width: 20%;
+           border: 1px solid black;   
+           margin-left: 4%;
+           border-radius: 4px;
+       }
+       .price_two{
+           height: 30px;
+           width: 30%;
+           border: 1px solid black; 
+           margin-left: 30px;
+           border-radius: 4px;
+
+       }
+       .price_para{
+           margin-top: 8%;
+           padding-left: 8%;
+       }
+       .range{
+           margin-left: 40px;
+
+       }
+       .discount_arrow{
+           margin-left: 75%;
+       }
+       .category_arrow{
+           margin-left: 65%;
+       }
+
+    /* 
+       cursor for nav bar  */
+       .saj-movetomen,.store,.saj-movetowomen,.saj-movetokids,.saj-reebok,.sale{
+        cursor: pointer;
+    }
+   
+       
+       
+    </style>
+  
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <!-- nav bar starts froms here -->
+
+  <!-- from here shkati code -->
+  <div id="dev_box1">
+    <div></div>
+    <div id="dev_box2">
+        <!-- <h6 id="dev_box2">ALSO VISIT<h6>
+            <h3>adidas</h3> -->
+            <span><a style="color: white; text-decoration: none;font-size: 14px;padding-right: 10px;" href="">ALSO VISIT</a><a style="color: white; text-decoration: none;font-size: 22px;" href="">adidas</a></span>
+    </div>
+<!-- <div>
+ <h3>adidas</h3>
+</div> -->
+<div id="dev_box3">
+<span><a style="color: white; text-decoration: none;" href="signup.html">SIGNUP</a> <a style="color: white; text-decoration: none;" href="login.html">|LOGIN|</a></span>
+</div>
+</div>
+
+<hr class="dev_hr">
+
+    <div class="dev_container">
+        
+     
+     
+       <div>
+           <div class="saj-rebook">
+               <img height="70%" src="https://content.shop4reebok.com/static/header/vector_logo_white_145x19_website.png" alt="Reebok india">
+           </div>
+           
+           <div class="saj-movetomen">MEN
+             
+
+           </div>
+             
+
+           <div class="saj-movetowomen">WOMEN</div>
+           <div class="saj-movetokids">KIDS</div>
+           <div class="explore">EXPLORE </div>
+           <div id="dev_box4" class="sale">SALE </div>
+           <div id="dev_box4" class="store">STORES OPEN NEAR YOU</div>
+           <div> 
+               <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+             </form>
+          <div id="dev_box5"><i style="font-size:26px" class="fa">&#xf07a;</i> <span id="saj-cartlength2"></span></div>
+          
+        </div>
+       </div>
+    </div>
+
+
+
+<!-- 
+nav bar ends here -->
+        <!-- mens products and their category starts from here  -->
+        <div id="saj-offer">
+            <p>EXTRA <span><b>10% OFF</b></span> ON PREPAID ORDERS MINIMUM CART VALUE  INR 1000.
+            </p>
+        </div>
+        <div id="saj-h1">
+   <h1>BOYS GIRLS/<span id="saj-productlength"></span> <span>Products</span></h1>
+        </div>
+        <!-- <p id="cartitems"></p> -->
+        <div id="saj-sorting">
+            <div id="saj-selection">
+                <b >Your Selection</b>
+            </div>
+            <div id="saj-category">
+            <select id="saj-select1" onchange="pricesort()" >
+                <option value="">Sort By</option>
+                <option value="low">Price Low to High</option>
+                <option value="high">Price High to Low</option>
+                <option value="">Most Popular</option>
+                <option value="">New Arrival</option>
+            </select>
+            </div>
+            <div id="saj-view">
+              <!-- <p id="saj-p">View : 60 | 120 | 240 | 580</p> -->
+              View : 60 | 120 | 240 | 580
+            </div>
+            <div id="saj-totalpage">
+                <div id="saj-select2div">
+               <select name="" id="saj-page" style="margin-right: 10px;" onchange="nextpage()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+                <p style="margin-right: 10px; font-size: 18px;">of 30</p>
+               <p> <i class="fas fa-chevron-right"></i></p>
+               
+            </div>
+        </div>
+        <div id="saj-both">
+            <div id="saj-filter">
+                <!-- debashish starts end here -->
+                <div class="heading_div">
+                    <div class="heading_left"><p class="para">GENDER</p></div>
+                     <div class="arrow">
+                       <i style="font-size:26px" class="fa">&#xf107;</i>
+                      </div>
+                    </div>
+                    <div class="heading_large">
+                        <div class="chekbox" style="display: flex;">
+                         <label for="mycheckbox">
+                             <input type="checkbox">
+                         </label>
+                         <div class="gender">
+                             <h7 class="men">Men  (1746)</h7>
+                         </div>
+                        </div>
+                        <div class="first_two">
+                         <div class="chekbox" style="display: flex;">
+                          <label for="mycheckbox">
+                              <input type="checkbox">
+                          </label>
+                          <div class="gender">
+                              <h7 class="men">women(389)</h7>
+                          </div>
+                         </div>  
+                    </div> 
+                 </div>
+    
+    <!-- category start here  -->
+    <div class="heading_div">
+        <div class="heading_left"><p class="para">CATEGORY</p></div>
+         <div class="category_arrow">
+           <i style="font-size:26px" class="fa">&#xf107;</i>
+          </div>
+        </div>
+        <div class="category_items">
+            <div class="check_box" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Footwear (799)</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Clothing (726) </p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Accessories (166)</p>
+            </div>
+        </div>
+    
+     <!-- category end here          -->
+    
+    
+     <!-- product type sart  -->
+    
+     <div class="heading_div">
+        <div class="heading_left"><p class="para">PRODUCT TYPE</p></div>
+         <div class="product_arrow">
+           <i style="font-size:26px" class="fa">&#xf107;</i>
+          </div>
+        </div>
+        <div class="category_items">
+            <div class="check_box" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Shoes (674)</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">T-Shirts (335) </p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para"> Sandals/Slippers (129)</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Polo Shirts (93)</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para"> Sandals/Slippers (129)</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para"> Pants (87)</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para"> Bags (86))</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">  Shorts (86)</p>
+            </div>
+            <div class="view_more">
+                <h7 class="view_text">>view more</h7>
+            </div>
+        </div>
+    
+        <!-- size start here  -->
+    
+        <div class="heading_div">
+            <div class="heading_left"><p class="para">SIZE</p></div>
+             <div class="size_arrow">
+               <i style="font-size:26px" class="fa">&#xf107;</i>
+              </div>
+         </div>
+         <div class="sizes">
+            <div><p>XS</p></div>
+            <div><p>S</p></div>
+            <div><p>M</p></div>
+            <div><p>L</p></div>
+            <div><p>XL</p></div>
+            <div><p>2XL</p></div>
+            <div><p>6</p></div>
+            <div><p>6</p></div>
+        </div>
+        <div class="size_view_more">
+            <h7 class="view_text">>view more</h7>
+        </div>
+        <!-- colours start here  -->
+    
+        <div class="heading_div">
+            <div class="heading_left"><p class="para">COLOUR</p></div>
+             <div class="colour_arrow">
+               <i style="font-size:26px" class="fa">&#xf107;</i>
+              </div>
+         </div>
+         <div class="colours">
+            <div class="colours_one"><p></p></div>
+            <div class="colours_two"><p></p></div>
+            <div class="colours_three"><p></p></div>
+            <div class="colours_four"><p></p></div>
+            <div class="colours_five"><p></p></div>
+            <div class="colours_six"><p></p></div>
+            <div class="colours_seven"><p></p></div>
+            <div class="colours_eight"><p></p></div>
+        </div>
+        <div class="size_view_more">
+            <h7 class="view_text">>view more</h7>
+        </div>
+        <!-- brand start here  -->
+    
+    
+        <div class="heading_div">
+            <div class="heading_left"><p class="para">BRANDS</p></div>
+             <div class="colour_arrow">
+               <i style="font-size:26px" class="fa">&#xf107;</i>
+              </div>
+         </div>
+         <div class="category_items">
+            <div class="check_box" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Classics (19)</p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Sport (1680) </p>
+            </div> 
+        </div>
+        
+        <!-- collection start here  -->
+    
+    
+        <div class="heading_div">
+            <div class="heading_left"><p class="para">COLLECTION</p></div>
+             <div class="collection_arrow">
+               <i style="font-size:26px" class="fa">&#xf107;</i>
+              </div>
+         </div>
+         <div class="category_items">
+            <div class="check_box" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Aov (668)  </p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Adaptive Response System (2) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Assassins Creed (1) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Bbc (1) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Best Of Collabs (2) </p>
+            </div> 
+            <div class="collection_view_more">
+                <h7 class="view_text">>view more</h7>
+            </div>
+        </div>
+    
+        <!-- sports start here  -->
+    
+    
+        <div class="heading_div">
+            <div class="heading_left"><p class="para">SPORTS</p></div>
+             <div class="sports_arrow">
+               <i style="font-size:26px" class="fa">&#xf107;</i>
+              </div>
+         </div>
+         <div class="category_items">
+            <div class="check_box" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Running (507) </p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Training (737) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Casual (204) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Swim (125)</p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Basketball (26) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para"> Mixed Martial Arts (12) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para"> Outdoor (3) </p>
+            </div> 
+            <div class="collection_view_more">
+                <h7 class="view_text">>view more</h7>
+            </div>    
+        </div>
+    
+        <!-- technology start here  -->
+    
+    
+        <div class="heading_div">
+            <div class="heading_left"><p class="para">TECHNOLOGY</p></div>
+             <div class="technology_arrow">
+               <i style="font-size:26px" class="fa">&#xf107;</i>
+              </div>
+         </div>
+         <div class="category_items">
+            <div class="check_box" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Running (507) </p>
+            </div>
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Training (737) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Casual (204) </p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Swim (125)</p>
+            </div> 
+            <div class="check_box2" style="display: flex;">
+                <label for=""><input type="checkbox"></label>
+                <p class="category_para">Basketball (26) </p>
+            </div>  
+            <div class="collection_view_more">
+                <h7 class="view_text">>view more</h7>
+            </div>    
+        </div>
+    
+        <!-- price range start here  -->
+         
+        <div class="price_range" style="display: flex;">
+            <div class="price_check_box" style="display: flex;">
+                <p class="category_para">PRICE RANGE </p>
+                <div class="price_arrow">
+                    <i style="font-size:26px" class="fa">&#xf107;</i>
+                </div>
+            </div>
+        </div>
+        <div class="price_bar"></div>
+        <div class="price">
+            <div class="price_one"><p class="price_para">Rs 0</p></div>
+            <div class="range">-</div>
+            <div class="price_two"><p class="price_para">Rs 20000</p></div>
+        </div>
+    
+        <!-- PRICE RANGE start here  -->
+    
+        <div class="heading_div">
+            <div class="heading_left"><p class="para">Discounts</p></div>
+             <div class="discount_arrow">
+               <i style="font-size:26px" class="fa">&#xf107;</i>
+              </div>
+            </div>
+            <div class="category_items">
+                <div class="check_box" style="display: flex;">
+                    <label for=""><input type="checkbox"></label>
+                    <p class="category_para">No Discount) </p>
+                </div>
+                <div class="check_box2" style="display: flex;">
+                    <label for=""><input type="checkbox"></label>
+                    <p class="category_para">1 - 10% </p>
+                </div> 
+                <div class="check_box2" style="display: flex;">
+                    <label for=""><input type="checkbox"></label>
+                    <p class="category_para">11 - 20% </p>
+                </div> 
+                <div class="check_box2" style="display: flex;">
+                    <label for=""><input type="checkbox"></label>
+                    <p class="category_para"> 21 - 30%</p>
+                </div> 
+                <div class="check_box2" style="display: flex;">
+                    <label for=""><input type="checkbox"></label>
+                    <p class="category_para">31 - 40% </p>
+                </div>  
+                <div class="collection_view_more">
+                    <h7 class="view_text">>view more</h7>
+                </div>    
+            </div>
+               <!-- debashish work end here -->
+            </div>
+            <div id="saj-products"></div>
+
+        </div>
+
+        <!-- sorting 2 part is here -->
+
+        <div id="saj-sorting">
+            <div id="saj-selection2">
+               
+            </div>
+            <div id="saj-category">
+            <select id="saj-select1" onchange="pricesort()" >
+                <option value="">Sort By</option>
+                <option value="low">Price Low to High</option>
+                <option value="high">Price High to Low</option>
+                <option value="">Most Popular</option>
+                <option value="">New Arrival</option>
+            </select>
+            </div>
+            <div id="saj-view">
+              <!-- <p id="saj-p">View : 60 | 120 | 240 | 580</p> -->
+              View : 60 | 120 | 240 | 580
+            </div>
+            <div id="saj-totalpage">
+                <div id="saj-select2div">
+               <select name="" id="saj-page" style="margin-right: 10px;" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+                <p style="margin-right: 10px; font-size: 18px;">of 30</p>
+               <p> <i class="fas fa-chevron-right"></i></p>
+               
+            </div>
+        </div>
+
+      <!-- footer starts from here -->
+
+
+        <!-- Bhawani's code starts from here -->
+    <div id="main_container_div">
+
+        <div id="footer_nav">
+            <div id="nav_one">
+                <p>Free Shipping + Free 30-Day Returns*</p>
+            </div>
+            <div id="nav_two">
+                <p>Call Us Between 8AM To 8PM : 1-800-120-4400</p>
+            </div>
+            <div id="nav_three">
+                <p>Email Us: Customer.Care@Reebok.Com</p>
+            </div>
+        </div>
+    
+        <div id="footer_body">
+            <div id="fb_one">
+                <div>
+                    <p>MEN</p>
+                    <a class="anchor_tag_footer_page" href="" title="Men Footwear">Footwear</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Men Clothing">Clothing</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Men Accessories">Accessories</a>
+                </div>
+                <div>
+                    <p>WOMEN</p>
+                    <a class="anchor_tag_footer_page" href="" title="Women Footwear">Footwear</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Women Clothing">Clothing</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="Women Accessories">Accessories</a>
+                </div>
+                <div>
+                    <p>KIDS</p>
+                    <a class="anchor_tag_footer_page" href="" title="KIDS Footwear">Footwear</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="KIDS Clothing">Clothing</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="KIDS Accessories">Accessories</a>
+                </div>
+            </div>
+            <div id="fb_two">
+                <div>
+                    <p>FITNESS</p>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Running">Running</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Training">Training</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Classics">Classics</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Walking">Walking</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Mixed Martial Arts">Mixed Martial Arts</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="FITNESS Swimming">Swimming</a>
+                </div>
+            </div>
+            <div id="fb_three">
+                <div>
+                    <p>QUICK SHOP</p>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Running">Running</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Training">Training</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Classics">Classics</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Walking">Walking</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP Mixed Martial Arts">Mixed Martial Arts</a><br/>
+                    <a class="anchor_tag_footer_page" href="" title="QUICK SHOP SALE">SALE</a>
+                </div>
+                <div>
+                    <p>NEW ARRIVALS</p>
+                    <a class="anchor_tag_footer_page" href="" title="New Arrivals">New Arrivals</a>
+                </div>
+            </div>
+            <div id="fb_four">
+                <p>CUSTOMER SERVICE</p>
+                <a class="anchor_tag_footer_page" href="" title="">Contact Us</a><br/>
+                <a class="anchor_tag_footer_page" href="" title="">My Account</a><br/>
+                <a class="anchor_tag_footer_page" href="" title="">*Privacy Policy</a><br/>
+                <a class="anchor_tag_footer_page" href="" title="">*Terms And Conditions</a>
+            </div>
+            <div>
+                <button id="btn_footer_97">97k</button><br/>
+                <button id="facebook_button_footer"><i id="facebook_logo_footer" class="fab fa-facebook-f"></i><p id="facebook_para_footer">share</p></button>
+            </div>
+        </div>
+    <div id="displayflex">
+        <div id="sign_up_footer">
+            <h1 id="sign_up_footer_h1">SIGN UP AND GET <span id="red_footer_15">15% OFF.</span></h1>
+           
+        </div>
+        <div>
+            <button id="sign_up_footer_button"><p id="sign_up_footer_button_p_tag">Sign Up <i id="right_arrow_footer" class="fas fa-chevron-right"></i></p></button>
+        </div>
+     </div>
+        <div id="footer_img_bottom_div">
+            <img id="footer_img_bottom" src="https://content.shop4reebok.com/static/footer/Payment_Icon_A.jpg" alt="img">
+        </div>
+       
+        <div id="footer_bottom_text">
+            <p>@ 2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD.</p>
+            <img id="footer_bottom_text_image" src="https://content.shop4reebok.com/static/footer/ADI_SPORTS_LOGO.jpg" alt="logo">
+        </div>
+
+
+
+    </div>
+</body>
+</html>
+<script>
+
+var data = [
+{
+     image_url:"https://content.shop4reebok.com/static/Product-S24179/reebok_S24179_1.jpg.plp",
+     name:"KIDS UNISEX REEBOK CLASSICS",
+     price:4699,
+     strikedoffprice:6599
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DY0870/UNISEX_Training_BACKPACK_DY0870_1.jpg.plp",
+        name:"KIDS UNISEX REEBOK BACKPACK",
+        price:880,
+        strikedoffprice:200
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FT1767/KIDS_TRAINING_BAGS_FT1767_1.jpg.plp",
+        name:"KIDS TRAINING REEBOK BACKPACK",
+        price:1099,
+        strikedoffprice:2099
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-H03295/Reebok_H03295_1.jpg.plp",
+        name:"KIDS REEBOK FURY SHOES",
+        price:13999,
+        strikedoffprice:14999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX0882/reebok_FX0882_1.jpg.plp",
+        name:"KIDS REEBOK RUNNING SHOES",
+        price:2700,
+        strikedoffprice:4999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX0345/reebok_FX0345_1.jpg.plp",
+        name:"KIDS BOYS RUNNER SHOES",
+        price:1620,
+        strikedoffprice:3599
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX0884/reebok_FX0884_1.jpg.plp",
+        name:"KIDS BOYS SCHOOL GRADE",
+        price:2700,
+        strikedoffprice:6999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EW5232/reebok_EW5232_1.jpg.plp",
+        name:"KIDS BOYS JUNIOR SHOES",
+        price:3999,
+        strikedoffprice:4999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EF7587/reebok_EF7587_1.jpg.plp",
+        name:"KIDS BOYS SANDALS",
+        price:999,
+        strikedoffprice:2999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX4013/KIDS_CLASSICS_SHOES_FX4013_1.jpg.plp",
+        name:"KIDS UNISEX 85 SHOES",
+        price:3477,
+        strikedoffprice:4459
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-V69990/V69990_1.jpg.plp",
+        name:"KIDS UNISEX PRIME SHOES",
+        price:1999,
+        strikedoffprice:2344
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EF3756/KIDS_RUNNING_SHOES_EF3756_1.jpg.plp",
+        name:"REEBOK ROYAL CLASSIC",
+        price:2999,
+        strikedoffprice:4569
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-GZ0081/reebok_GZ0081_1.jpg.plp",
+        name:"KIDS BOYS SCHOOL GRADE",
+        price:1344,
+        strikedoffprice:2345
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EW5235/adidas_EW5235_1.jpg.plp",
+        name:"KIDS BOYS REEBOK SHOES",
+        price:2347,
+        strikedoffprice:3265
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX3368/reebok_FX3368_1.jpg.plp",
+        name:"KIDS BOYS KINETIC SHOES",
+        price:2250,
+        strikedoffprice:4999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DV8577/Infants_RUNNING_SHOES_LOW_DV8577_1.jpg.plp",
+        name:"REEBOK FURY SHOES",
+        price:2355,
+        strikedoffprice:3265
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EH1007/reebok_EH1007_1.jpg.plp",
+        name:"KIDS UNISEX PRIME SHOES",
+        price:1499,
+        strikedoffprice:2455
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FT1752/KIDS_TRAINING_BAGS_FT1752_1.jpg.plp",
+        name:"UNISEX KIDS FOUNDATION BACKPACK",
+        price:999,
+        strikedoffprice:1999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DQ1593/Unisex_TRAINING_BACKPACK_DQ1593_1.jpg.plp",
+        name:"KIDS UNISEX PHASE BACKPACK",
+        price:840,
+        strikedoffprice:1249
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DY0870/UNISEX_Training_BACKPACK_DY0870_1.jpg.plp",
+        name:"KIDS UNISEX MOTION BACKPACK",
+        price:2459,
+        strikedoffprice:3456
+    },
+    {
+        image_url: "https://content.shop4reebok.com/static/Product-EW5233/reebok_EW5233_1.jpg.plp",
+        name:"KIDS-BOYS RUN JR SHOES",
+        price:1170,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5230/reebok_EW5230_1.jpg.plp",
+        name:"KIDS-BOYS RUNNING AIM SHOES",
+        price:1550,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-DV8577/Infants_RUNNING_SHOES_LOW_DV8577_1.jpg.plp",
+        name:"INFANTS' REEBOKPUMP FURY SHOES",
+        price:1600,
+        strikedoffprice:5599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-FX3368/reebok_FX3368_1.jpg.plp",
+        name:"INFANTS' REEBOK SHOES",
+        price:1370,
+        strikedoffprice:4599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-CN3423/Infants_CASUAL_SHOES_LOW_CN3423_1.jpg.plp",
+        name:"INFANTS' REEBOK CLASSIC VENTUREFLEX CHUKKA SHOES",
+        price:1170,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5233/reebok_EW5233_1.jpg.plp",
+        name:"KIDS-BOYS RUN JR SHOES",
+        price:1170,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5230/reebok_EW5230_1.jpg.plp",
+        name:"KIDS-BOYS RUNNING AIM SHOES",
+        price:1850,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5233/reebok_EW5233_1.jpg.plp",
+        name:"KIDS-BOYS RUN JR SHOES",
+        price:1970,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5230/reebok_EW5230_1.jpg.plp",
+        name:"KIDS-BOYS RUNNING AIM SHOES",
+        price:1150,
+        strikedoffprice:2599,
+    },
+    {
+     image_url:"https://content.shop4reebok.com/static/Product-S24179/reebok_S24179_1.jpg.plp",
+     name:"KIDS UNISEX REEBOK CLASSICS",
+     price:4699,
+     strikedoffprice:6599
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DY0870/UNISEX_Training_BACKPACK_DY0870_1.jpg.plp",
+        name:"KIDS UNISEX REEBOK BACKPACK",
+        price:880,
+        strikedoffprice:200
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FT1767/KIDS_TRAINING_BAGS_FT1767_1.jpg.plp",
+        name:"KIDS TRAINING REEBOK BACKPACK",
+        price:1099,
+        strikedoffprice:2099
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-H03295/Reebok_H03295_1.jpg.plp",
+        name:"KIDS REEBOK FURY SHOES",
+        price:13999,
+        strikedoffprice:14999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX0882/reebok_FX0882_1.jpg.plp",
+        name:"KIDS REEBOK RUNNING SHOES",
+        price:2700,
+        strikedoffprice:4999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX0345/reebok_FX0345_1.jpg.plp",
+        name:"KIDS BOYS RUNNER SHOES",
+        price:1620,
+        strikedoffprice:3599
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX0884/reebok_FX0884_1.jpg.plp",
+        name:"KIDS BOYS SCHOOL GRADE",
+        price:2700,
+        strikedoffprice:6999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EW5232/reebok_EW5232_1.jpg.plp",
+        name:"KIDS BOYS JUNIOR SHOES",
+        price:3999,
+        strikedoffprice:4999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EF7587/reebok_EF7587_1.jpg.plp",
+        name:"KIDS BOYS SANDALS",
+        price:999,
+        strikedoffprice:2999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX4013/KIDS_CLASSICS_SHOES_FX4013_1.jpg.plp",
+        name:"KIDS UNISEX 85 SHOES",
+        price:3477,
+        strikedoffprice:4459
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-V69990/V69990_1.jpg.plp",
+        name:"KIDS UNISEX PRIME SHOES",
+        price:1999,
+        strikedoffprice:2344
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EF3756/KIDS_RUNNING_SHOES_EF3756_1.jpg.plp",
+        name:"REEBOK ROYAL CLASSIC",
+        price:2999,
+        strikedoffprice:4569
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-GZ0081/reebok_GZ0081_1.jpg.plp",
+        name:"KIDS BOYS SCHOOL GRADE",
+        price:1344,
+        strikedoffprice:2345
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EW5235/adidas_EW5235_1.jpg.plp",
+        name:"KIDS BOYS REEBOK SHOES",
+        price:2347,
+        strikedoffprice:3265
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FX3368/reebok_FX3368_1.jpg.plp",
+        name:"KIDS BOYS KINETIC SHOES",
+        price:2250,
+        strikedoffprice:4999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DV8577/Infants_RUNNING_SHOES_LOW_DV8577_1.jpg.plp",
+        name:"REEBOK FURY SHOES",
+        price:2355,
+        strikedoffprice:3265
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-EH1007/reebok_EH1007_1.jpg.plp",
+        name:"KIDS UNISEX PRIME SHOES",
+        price:1499,
+        strikedoffprice:2455
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-FT1752/KIDS_TRAINING_BAGS_FT1752_1.jpg.plp",
+        name:"UNISEX KIDS FOUNDATION BACKPACK",
+        price:999,
+        strikedoffprice:1999
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DQ1593/Unisex_TRAINING_BACKPACK_DQ1593_1.jpg.plp",
+        name:"KIDS UNISEX PHASE BACKPACK",
+        price:840,
+        strikedoffprice:1249
+    },
+    {
+        image_url:"https://content.shop4reebok.com/static/Product-DY0870/UNISEX_Training_BACKPACK_DY0870_1.jpg.plp",
+        name:"KIDS UNISEX MOTION BACKPACK",
+        price:2459,
+        strikedoffprice:3456
+    },
+    {
+        image_url: "https://content.shop4reebok.com/static/Product-EW5233/reebok_EW5233_1.jpg.plp",
+        name:"KIDS-BOYS RUN JR SHOES",
+        price:1170,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5230/reebok_EW5230_1.jpg.plp",
+        name:"KIDS-BOYS RUNNING AIM SHOES",
+        price:1550,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-DV8577/Infants_RUNNING_SHOES_LOW_DV8577_1.jpg.plp",
+        name:"INFANTS' REEBOKPUMP FURY SHOES",
+        price:1600,
+        strikedoffprice:5599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-FX3368/reebok_FX3368_1.jpg.plp",
+        name:"INFANTS' REEBOK SHOES",
+        price:1370,
+        strikedoffprice:4599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-CN3423/Infants_CASUAL_SHOES_LOW_CN3423_1.jpg.plp",
+        name:"INFANTS' REEBOK CLASSIC VENTUREFLEX CHUKKA SHOES",
+        price:1170,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5233/reebok_EW5233_1.jpg.plp",
+        name:"KIDS-BOYS RUN JR SHOES",
+        price:1170,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5230/reebok_EW5230_1.jpg.plp",
+        name:"KIDS-BOYS RUNNING AIM SHOES",
+        price:1850,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5233/reebok_EW5233_1.jpg.plp",
+        name:"KIDS-BOYS RUN JR SHOES",
+        price:1970,
+        strikedoffprice:2599,
+    },
+{
+        image_url: "https://content.shop4reebok.com/static/Product-EW5230/reebok_EW5230_1.jpg.plp",
+        name:"KIDS-BOYS RUNNING AIM SHOES",
+        price:1150,
+        strikedoffprice:2599,
+    },
+];
+
+
+// document.getElementById("saj-addtocart").addEventListener("click",function(){
+  
+// });
+displaydata(data)
+function nextpage(){
+   
+   var selected2 = document.querySelector("#saj-page").value;
+
+   console.log(selected2)
+   if(selected2 === "1"){
+       window.location.href = "alpha2.html"
+    
+   }
+   if(selected2 === "3"){
+       window.location.href = "product3.html"
+      
+      
+   }
+   if(selected2 === "2"){
+       window.location.href = "product2.html"
+      
+      
+   }
+   if(selected2 === "4"){
+       window.location.href = "product2.html"
+      
+      
+   }
+   if(selected2 === "5"){
+       window.location.href = "product2.html"
+      
+      
+   }
+   
+
+  
+   displaydata(data)
+}
+
+var cart1 = JSON.parse(localStorage.getItem("cartproducts"))  || [];
+console.log(data.length)
+document.querySelector("#saj-productlength").textContent = data.length;
+displaydata(data)
+function pricesort(){
+    
+    var selected = document.querySelector("#saj-select1").value;
+    console.log(selected)
+    if(selected == "low"){
+        data.sort(function (a,b){
+            return Number(a.price)-Number(b.price);
+        });
+    }
+    if(selected == "high"){
+        data.sort(function (a,b){
+            return Number(b.price)-Number(a.price);
+        });
+    }
+    else if(selected == ""){
+        data.sort(function (a,b){
+            return 0;
+        });
+    }
+  
+    console.log(data)
+  displaydata(data)
+}
+
+
+function displaydata(data){
+
+    document.querySelector("#saj-products").textContent = "";
+    data.map(function (elem){
+
+
+        var productdiv = document.createElement("div")
+        productdiv.setAttribute("id","saj-productdiv")
+        productdiv.title = "Men's Fashion"
+
+        var addtocart = document.createElement("button");
+        addtocart.setAttribute("id","saj-addtocart");
+        addtocart.textContent = "Add to cart"
+        addtocart.addEventListener("click", function(){
+            // console.log("button")
+            // window.location.href ="cart.html"
+           cartlength(elem)
+        //    add navbar cart ID here
+           document.querySelector("#saj-cartlength2").textContent = cart1.length;
+        })
+
+      
+        
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.image_url);
+        img.setAttribute("id","saj-img")
+
+        var name = document.createElement("h1");
+        name.textContent = elem.name;
+        name.setAttribute("id","saj-name")
+
+        var smalldiv = document.createElement("div");
+        smalldiv.setAttribute("id","saj-smalldiv")
+
+        var price = document.createElement("p");
+        price.textContent = elem.price;
+        price.setAttribute("id","saj-price")
+
+        var strike = document.createElement("p");
+        strike.textContent = elem.strikedoffprice;
+        strike.setAttribute("id","saj-strike");
+//    temp tesing part
+        var cartlogo = document.createElement("span");
+        cartlogo.setAttribute("id","saj-icon")
+        var logo = document.createElement("i");
+        logo.setAttribute("class","fas fa-shopping-cart")
+      
+cartlogo.append(logo)
+addtocart.append(cartlogo)
+     smalldiv.append(price,strike)
+         productdiv.append(img,name,smalldiv,addtocart)
+        document.querySelector("#saj-products").append(productdiv)
+
+     
+    })
+}
+function cartlength(elem){
+    console.log(elem);
+    cart1.push(elem);
+    localStorage.setItem("cartproducts", JSON.stringify(cart1))
+}
+ // moving location code here from navbar
+ document.querySelector(".saj-movetowomen").addEventListener("click",womens)
+
+
+function womens(){
+    window.location.href = "women.html"
+}
+
+document.querySelector(".saj-movetokids").addEventListener("click",kids)
+
+
+function kids(){
+    window.location.href = "kids.html"
+}
+document.querySelector(".saj-movetomen").addEventListener("click",men)
+
+
+function men(){
+    window.location.href = "mens.html"
+}
+
+
+    document.querySelector("#dev_box5").addEventListener("click", cartfunction);
+
+function  cartfunction(){
+    window.location.href = "cart.html"
+}
+
+document.querySelector(".store").addEventListener("click",store);
+
+function store(){
+    window.location.href ="store.html"
+}
+
+
+document.querySelector(".saj-reebok").addEventListener("click",reebok);
+
+function reebok(){
+    window.location.href = "Reebok.html"
+}
+
+document.querySelector(".sale").addEventListener("click", sale);
+
+function sale(){
+    window.location.href = "sale.html"
+}
+
+
+
+
+</script>
