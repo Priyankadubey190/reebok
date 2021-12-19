@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Address</title>
+    <link rel="icon" href="reebok-3.png" type="image/jpg">
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/577c169d0f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5c6293b5b4.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         /* this is shakti's stylesheet */
   #maincontainer{
       width: 100%;
-     
+
 
   }
-        .dev_container{
+  .dev_container{
             display: flex;
             color: white;
             background-color: black;
             width: 100%;
             height: 70px;
             column-gap: 100px;
-            font-size: 20px;
+            font-size: 15px;
             font-weight: bold;
             
            
@@ -56,7 +56,7 @@
         #dev_box3
 {
     
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 0.5%;
     
     
@@ -68,15 +68,22 @@
         #dev_box2{
             /* margin-left: 550px; */
             margin-top: 0.5%;
-            font-size: 20px;
+            font-size: 15px;
+            text-decoration: none;
             
         }
         #dev_box4{
             color: red;
+            font-size: 15px;
+        }
+        #dev_box41{
+            color: red;
+            font-size: 15px;
         }
         #dev_box5{
     color: white;
     margin-left: 10px;
+    cursor: pointer;
 }
         .dev_hr{
         margin-top: 0px;
@@ -112,7 +119,7 @@ form.example button:hover {
     .pre-top{
         display: flex;
         margin-top: 20px;
-        
+
     }
     .col-1-top{
      height: 50px;
@@ -140,7 +147,7 @@ form.example button:hover {
         text-align: center;
         line-height: 20px;
         color: white;
-        
+
     }
     .p-dev{
         height: 20px;
@@ -150,7 +157,7 @@ form.example button:hover {
         text-align: center;
         line-height: 20px;
         color: white;
-        
+
     }
     .pre-del{
         font-family: 'Bakbak One', cursive;
@@ -190,7 +197,7 @@ form.example button:hover {
     }
     .pre-flex{
         display: flex;
-        
+
     }
     .bag{
         margin-left: 10px;
@@ -229,14 +236,14 @@ form.example button:hover {
             width: 100%;
             height: 62vh;
             display: flex;
-            
+
             background-color: rgb(52,53,48);
         }
         #footer_body>div{
             padding-top: 15px;
             line-height: 25px;
             color: white;
-            
+
         }
         #fb_one{
             margin-left: 155px;
@@ -254,11 +261,11 @@ form.example button:hover {
             margin-left: 70px;        
         }
         #fb_four>p{color: gray;}
-    
+
         #footer_body>div>div>p{
             margin-bottom: 0px;
         }
-    
+
         #btn_footer_97{
             padding: 1px 24px;
             margin-left: 110px;
@@ -272,7 +279,7 @@ form.example button:hover {
             padding: 1px 10px;
             margin-left: 110px;
             border: transparent;
-           
+
             background-color: rgb(24,119,242);
             color: white;
         }
@@ -309,7 +316,7 @@ form.example button:hover {
             font-size: 30px;
             color: white;
             font-family: 'Oswald', sans-serif;
-           
+
         }
         #sign_up_footer_button{
             margin-left:20px;
@@ -355,6 +362,16 @@ form.example button:hover {
             height: 30px;
         }
          /* bhavani part is end from here */
+
+
+
+
+         /* 
+       cursor for nav bar  */
+       .saj-movetomen,.store,.saj-movetowomen,.saj-movetokids,.saj-reebok{
+        cursor: pointer;
+    }
+
     </style>
 </head>
 <body>
@@ -364,44 +381,44 @@ form.example button:hover {
         <div id="dev_box2">
             <!-- <h6 id="dev_box2">ALSO VISIT<h6>
                 <h3>adidas</h3> -->
-                <span><a style="color: white;" href="">ALSO VISIT</a><a style="color: white;" href="">adidas</a></span>
+                <span><a style="color: white; text-decoration: none;font-size: 14px;padding-right: 10px;" href="">ALSO VISIT</a><a style="color: white; text-decoration: none;font-size: 22px;" href="">adidas</a></span>
         </div>
 <!-- <div>
      <h3>adidas</h3>
 </div> -->
 <div id="dev_box3">
-    <span><a style="color: white;" href="">SIGNUP</a> <a style="color: white;" href="">|LOGIN|</a></span>
+    <span><a style="color: white; text-decoration: none;" href="signup.html">SIGNUP</a> <a style="color: white; text-decoration: none;" href="login.html">|LOGIN|</a></span>
 </div>
 </div>
 
 <hr class="dev_hr">
 
         <div class="dev_container">
-            
-         
-         
+
+
+
            <div>
-               <div>
+               <div class="saj-reebok">
                    <img height="70%" src="https://content.shop4reebok.com/static/header/vector_logo_white_145x19_website.png" alt="Reebok india">
                </div>
-               <div>REEBOK </div>
-               <div>MEN
-                 
+               
+               <div class="saj-movetomen">MEN
+
 
                </div>
-                 
 
-               <div>WOMEN</div>
-               <div>KIDS</div>
+
+               <div class="saj-movetowomen">WOMEN</div>
+               <div class="saj-movetokids">KIDS</div>
                <div>EXPLORE </div>
                <div id="dev_box4">SALE </div>
-               <div id="dev_box4">STORIES OPEN NEAR YOU</div>
+               <div id="dev_box4" class="store">STORIES OPEN NEAR YOU</div>
                <div> 
                    <form class="example" action="action_page.php">
                 <input type="text" placeholder="Search.." name="search">
                  </form>
               <div id="dev_box5"><i style="font-size:26px" class="fa">&#xf07a;</i> </div>
-              
+
             </div>
            </div>
         </div>
@@ -419,7 +436,7 @@ form.example button:hover {
                     <div class="p-dev">2</div>
                     <span class="bag">Delivery</span>
                 </div>
-                
+
             </div>
             <div class="col-1-top">
                 <div class="pre-flex">
@@ -434,7 +451,7 @@ form.example button:hover {
         <b>Country -India</b>
         <br>
         <input type="text" placeholder="*First Name" class="pre-na"><input type="text" placeholder="*Last Name" class="pre-na">
-        
+
         <input type="text" placeholder="*street Address ,City" class="pre-sen"><br>
         <input type="text" placeholder="*Land Mark" class="pre-na"><select name="" id="" class="pre-sel">
             <option value="">--*Select State--</option>
@@ -466,7 +483,7 @@ form.example button:hover {
                 <p>Email Us: Customer.Care@Reebok.Com</p>
             </div>
         </div>
-    
+
         <div id="footer_body">
             <div id="fb_one">
                 <div>
@@ -542,3 +559,72 @@ form.example button:hover {
     <!-- bhavani part is end from here -->
 </body>
 </html>
+
+<script>
+
+    document.querySelector(".del-btn").addEventListener("click",paymentfunction);
+
+
+   function  paymentfunction(){
+
+
+
+    var firstname = document.querySelector(".pre-na").value;
+    var mob   = document.querySelector(".pre-sen").value;
+
+if(firstname === "" || mob === ""){
+    alert("Please fill all the fields")
+    // document.querySelector(".pre-na").focus;
+}
+else{
+
+
+       window.location.href = "payment.html"
+   }
+}
+
+
+
+
+
+     // moving location code here from navbar
+document.querySelector(".saj-movetowomen").addEventListener("click",womens)
+
+
+function womens(){
+    window.location.href = "women.html"
+}
+
+document.querySelector(".saj-movetokids").addEventListener("click",kids)
+
+
+function kids(){
+    window.location.href = "kids.html"
+}
+document.querySelector(".saj-movetomen").addEventListener("click",men)
+
+
+function men(){
+    window.location.href = "mens.html"
+}
+
+
+    document.querySelector("#dev_box5").addEventListener("click", cartfunction);
+
+function  cartfunction(){
+    window.location.href = "cart.html"
+}
+
+document.querySelector(".store").addEventListener("click",store);
+
+function store(){
+    window.location.href ="store.html"
+}
+
+
+document.querySelector(".saj-reebok").addEventListener("click",reebok);
+
+function reebok(){
+    window.location.href = "Reebok.html"
+}
+</script>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>checkout-cart section</title>
+    <link rel="icon" href="reebok-3.png" type="image/jpg">
+    <script src="https://kit.fontawesome.com/577c169d0f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5c6293b5b4.js" crossorigin="anonymous"></script>
+    <style>
+/* this is shakti's stylesheet */
+#maincontainer{
+      width: 100%;
+     
+
+  }
+  .dev_container{
+            display: flex;
+            color: white;
+            background-color: black;
+            width: 100%;
+            height: 70px;
+            column-gap: 100px;
+            font-size: 15px;
+            font-weight: bold;
+            
+           
+           
+           
+           
+        }
+        .dev_container>div{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            
+            column-gap: 50px;
+          
+           margin-top: 22px;
+           margin-left: 150px;
+        }
+        #dev_box1{
+            display: flex;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            height: 40px;
+            margin-top: 0px;
+            justify-content:space-around;
+            
+           
+            column-gap: 10px;
+        }
+        
+        #dev_box3
+{
+    
+    font-size: 15px;
+    margin-top: 0.5%;
+    
+    
+
+            /* margin-left: 400px; */
+        
+        }
+    
+        #dev_box2{
+            /* margin-left: 550px; */
+            margin-top: 0.5%;
+            font-size: 15px;
+            text-decoration: none;
+            
+        }
+        #dev_box4{
+            color: red;
+            font-size: 15px;
+        }
+        #dev_box41{
+            color: red;
+            font-size: 15px;
+        }
+        #dev_box5{
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+        .dev_hr{
+        margin-top: 0px;
+        color: black;
+        margin-bottom: -1.51px
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+
+
+
+
+ #saj-bdp{
+         width: 80%;
+         height: 50px;
+         /* border: 1px solid black; */
+         margin: auto;
+         display: flex;
+         margin-top: 50px;
+         margin-bottom: 100px;
+         background-color: #e2e2e2;
+     }
+     #bag{
+         width: 33.33%;
+         height: 100%;
+         border-right: 2px solid grey ;
+         display: flex;
+     }
+     #saj-number{
+         height: 30px;
+         width: 30px;
+         /* border: 1px solid red; */
+         border-radius: 50%;
+         margin-top: 7px;
+         font-size: 30px;
+         text-align: center;
+         color: white;
+         background-color: rgb(173, 172, 172);
+     }
+     #saj-bag{
+         padding-top: 12px;
+         padding-left: 10px;
+         font-size: 20px;
+     }
+
+
+
+
+
+        #main_container_cart{
+           width: 85%;
+           
+           margin: auto;
+           box-sizing: border-box;
+           
+        }
+        #sub_main_container_cart{
+            display: flex;
+            
+        }
+        #firstdiv_cartpage{
+            width: 70%;
+            height: 100%;
+            margin-top: 30px;
+           
+        }
+        #sub_first_div_flex{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            
+        }
+        #update_cart_item{
+            width: 10%;
+            height: 20px;
+            margin: 20px 30px 0px 30px;
+        }
+        #remove_cart_item{
+            border: transparent;
+            background-color: white;
+            color: rgb(90, 86, 86);
+            font-weight: bold;
+        }
+        #remove_cart_item:hover{
+            text-decoration: underline;
+        }
+        #wishlist_cart_item{
+            border: transparent;
+            background-color: white;
+            color: rgb(90, 86, 86);
+            font-weight: bold;
+        }
+        #wishlist_cart_item:hover{
+            text-decoration: underline;
+        }
+        #sub_first_div_flex>img{
+            width: 20%;
+            height: 80%;
+            
+        }
+        #update_cart_item{
+            background-color: white;
+            border: 1px solid gray;
+            padding: 10px 25px 10px 20px;
+            height: 30px;
+            
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        #name_cart_page{
+            padding-left: 20px;
+            
+        }
+        #div_remove_wishlist_flex{
+            padding: 10px;
+            margin-top: 25%;
+        }
+        #seconddiv_cartpage{
+            width: 27%;
+            height: 20%;
+            margin-left: 15px;
+        }
+        #line_balck_order_summary>hr{
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+        #subtotal_order_summary_flex{
+            display: flex;
+            
+        }
+        #order_discounts_cart_flex{
+            display: flex;
+            
+        }
+        #total_order_cart_flex{
+            display: flex;
+            
+        }
+        #seconddiv_cartpage>h3{
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+        #subtotal_order_summary_flex>p{
+            padding-left: 10px;
+            padding-right: 10%;
+            margin-top: 0px;
+        }
+        #order_discounts_cart_flex>p{
+            padding-left: 10px;
+            padding-right: 25%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #order_discounts_cart_flex>h3{
+            margin-top: 0px;
+        }
+        #total_order_cart_flex>h3{
+            padding-left: 10px;
+            padding-right: 40%;
+            margin-top: 0px;
+        }
+        #total_order_cart_flex>h2{
+            margin-top: 0px;
+        }
+        #main_container_cart>p{
+            margin-bottom: 0px;
+        }
+        #checkout_btn_cart_page{
+            width: 100%;
+            height: 45px;
+            font-size: 20px;
+            color: white;
+            z-index: -1;
+            border: 1px solid;
+            background-color: rgb(199,20,50);
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        #checkout_btn_cart_page:hover{
+            background-color: rgb(235, 15, 88);
+        }
+        #p_tag_cart_order{
+            margin-top: 0px;
+            padding-left: 45%;
+        }
+        #color_blue_p_tag{
+            color: rgb(24,119,242);
+        }
+        #order_summary_div_cartpage{
+            background-color: rgb(230, 227, 227);
+        }
+
+
+
+
+
+        /* 
+       cursor for nav bar  */
+       .saj-movetomen,.store,.saj-movetowomen,.saj-movetokids,.saj-reebok{
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+  <!-- from here shkati code -->
+  <div id="dev_box1">
+    <div></div>
+    <div id="dev_box2">
+        <!-- <h6 id="dev_box2">ALSO VISIT<h6>
+            <h3>adidas</h3> -->
+            <span><a style="color: white; text-decoration: none;font-size: 14px;padding-right: 10px;" href="">ALSO VISIT</a><a style="color: white; text-decoration: none;font-size: 22px;" href="">adidas</a></span>
+    </div>
+<!-- <div>
+ <h3>adidas</h3>
+</div> -->
+<div id="dev_box3">
+<span><a style="color: white; text-decoration: none;" href="signup.html">SIGNUP</a> <a style="color: white; text-decoration: none;" href="login.html">|LOGIN|</a></span>
+</div>
+</div>
+<hr class="dev_hr">
+
+    <div class="dev_container">
+        
+     
+     
+       <div>
+           <div class="saj-reebok">
+               <img height="70%" src="https://content.shop4reebok.com/static/header/vector_logo_white_145x19_website.png" alt="Reebok india">
+           </div>
+         
+           <div class="saj-movetomen">MEN
+             
+
+           </div>
+             
+
+           <div class="saj-movetowomen">WOMEN</div>
+           <div class="saj-movetokids">KIDS</div>
+           <div>EXPLORE </div>
+           <div id="dev_box4">SALE </div>
+           <div id="dev_box4" class="store">STORIES OPEN NEAR YOU</div>
+           <div> 
+               <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+             </form>
+          <div id="dev_box5"><i style="font-size:26px" class="fa">&#xf07a;</i> </div>
+          
+        </div>
+       </div>
+    </div>
+
+
+
+    <!-- navbar ends here -->
+    <div id="saj-bdp">
+        <div id="bag" style="background-color: snow;">
+            <div id="saj-number" style="background-color: rgb(196, 28, 28);">1 </div><span id="saj-bag">Bag</span>
+        </div>
+        <div id="bag">
+            <div id="saj-number">2</div><span id="saj-bag">Delivery</span>
+        </div>
+        <div id="bag">
+            <div id="saj-number" >3</div><span id="saj-bag">Payment</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="main_container_cart">
+        <h2>YOUR SHOPPING CART</h2>
+        <p>Item Details</p>
+        <div id="sub_main_container_cart">
+            <div id="firstdiv_cartpage"></div>
+
+            <div id="seconddiv_cartpage">
+                <h3>Order Summary</h3>
+                <div id="line_balck_order_summary"><hr/></div>
+
+                <div id="order_summary_div_cartpage">
+                    <div id="subtotal_order_summary_flex">
+                        <p>Merchandise <br/> Subtotal <br/> (Incl Item Discounts)</p>
+                        <h3>₹<span id="update_price"></span>.00</h3>
+                    </div>
+                    <div id="order_discounts_cart_flex">
+                        <p>Order Discounts</p>
+                        <h3>-₹.00</h3>
+                    </div>
+                    <hr>
+                    <div id="total_order_cart_flex">
+                        <h3>Total</h3>
+                        <h2>₹<span id="update__total_price"></span>.00</h2>
+                    </div>
+                    <div><p id="p_tag_cart_order">(Inclusive of all taxes)</p></div>
+                </div>
+                <button id="checkout_btn_cart_page">checkout</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var arr=JSON.parse(localStorage.getItem("cartproducts")) || [];
+    // console.log(arr);
+    display(arr);
+    function display(arr){
+
+        document.querySelector("#firstdiv_cartpage").innerHTML="";
+
+        var sum=0;
+        for(var i=0;i<arr.length;i++){
+            sum+=Number(arr[i].strikedoffprice);
+        }
+        document.querySelector("#update_price").innerHTML=sum;
+        document.querySelector("#update__total_price").innerHTML=sum;
+        localStorage.setItem("sum",JSON.stringify(sum))
+
+        arr.map(function(ele,index){
+            var ptag=document.createElement("p");
+            ptag.textContent="Item Details";
+            
+
+            var hr=document.createElement("hr");
+            
+            var days=document.createElement("p");
+            days.textContent="Ships In 2-7 Days.";
+            days.setAttribute("id","color_blue_p_tag");
+
+            var div=document.createElement("div");
+            div.setAttribute("id","sub_first_div_flex");
+
+            var img=document.createElement("img");
+            img.setAttribute("src",ele.image_url);
+            
+            var price=document.createElement("p");
+            price.textContent=ele.price;
+
+            var strikedoffprice=document.createElement("p");
+            strikedoffprice.textContent=ele.strikedoffprice;
+            
+            var div1=document.createElement("div");
+            var name=document.createElement("p");
+            name.textContent=ele.name;
+            name.setAttribute("id","name_cart_page");
+
+            var div2=document.createElement("div");
+            div2.setAttribute("id","div_remove_wishlist_flex");
+
+            var remove=document.createElement("button");
+            remove.textContent="Remove Item";
+            remove.setAttribute("id","remove_cart_item");
+            remove.addEventListener("click", function(){
+                removeitem(index);
+            });
+            
+            var wishlist=document.createElement("button");
+            wishlist.textContent="Add to Wishlist"
+            wishlist.setAttribute("id","wishlist_cart_item");
+
+            var update=document.createElement("button");
+            update.textContent="Update";
+            update.setAttribute("id","update_cart_item");
+            
+            div2.append(remove,wishlist);
+            div1.append(name,div2);
+
+            div.append(img,div1,update,strikedoffprice);
+
+            document.querySelector("#firstdiv_cartpage").append(hr,days,div);
+        });
+    }
+
+    function removeitem(index){
+    
+        arr.splice(index,1);
+        localStorage.setItem("cartproducts",JSON.stringify(arr));
+        display(arr);
+    }
+
+    document.querySelector("#checkout_btn_cart_page").addEventListener("click", checkoutFun)
+    function checkoutFun(){
+        window.location.href="delivery.html";
+    }
+
+
+
+      // moving location code here from navbar
+document.querySelector(".saj-movetowomen").addEventListener("click",womens)
+
+
+function womens(){
+    window.location.href = "women.html"
+}
+
+document.querySelector(".saj-movetokids").addEventListener("click",kids)
+
+
+function kids(){
+    window.location.href = "kids.html"
+}
+document.querySelector(".saj-movetomen").addEventListener("click",men)
+
+
+function men(){
+    window.location.href = "mens.html"
+}
+
+
+    document.querySelector("#dev_box5").addEventListener("click", cartfunction);
+
+function  cartfunction(){
+    window.location.href = "cart.html"
+}
+
+document.querySelector(".store").addEventListener("click",store);
+
+function store(){
+    window.location.href ="store.html"
+}
+
+
+document.querySelector(".saj-reebok").addEventListener("click",reebok);
+
+function reebok(){
+    window.location.href = "Reebok.html"
+}
+</script>
