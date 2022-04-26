@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/577c169d0f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .full_div{
+            height: 2000px;
+            width: 20%;
+            /* border: 2px solid red;   */
+        }
+        .first_div{
+            margin-left: 2%;
+            height: 100px;
+          
+
+        }
+        .first_one{
+            height: 25px;
+            /* border: 1px solid red; */
+            background-color:#7e7b7ba2 ;
+            
+        }
+        .h1{
+            margin-top: 1%;
+            padding: 2px 6px;
+            /* border: 1px solid red; */
+            width: 270%;    
+        }
+        .gender{
+            display: flex;
+            
+        }
+        .arrow{
+            margin-left: 10%;
+            padding-left: 3%;
+            /* background-color:#cac8c8a2 ; */
+            /* border: 1px solid red; */
+            height: 10px;
+            width: 40%;
+            margin-right: 5%;
+            background-color: rgb(145, 139, 139);
+        }
+        .men{
+            /* margin-top: 1%; */
+            height: 18px;
+            width: 100%;
+            /* border: 2px solid black; */
+            font-size: 16px;
+            margin-top: 3%;
+        }
+        .second_one{
+            background-color:#7e7b7ba2 ;
+            height: 25px;
+            margin-top: 7%;
+        }
+        .size{
+            display: flex; 
+        }
+        .size_div{
+            background-color:#7e7b7ba2 ;
+            height: 35px;
+            margin-top: 7%;
+        }
+        .size_h5{
+            margin-top: 1%;
+            padding: 2px 6px;
+            /* border: 1px solid red; */
+            width: 270%;
+            font-size: 17px;
+        }
+        .sizes{
+            display: grid;
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 30px 30px 30px;
+            grid-row-gap: 30px;
+            grid-column-gap: 30%;
+           
+        }
+        .sizes>div{
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 10px;
+            /* height: 80px; */
+            width: 130%;
+            font-size: 20px;
+            height: 25px;
+            margin-left: 5px;
+            margin-top: 15px;
+        }
+        .sizes>div>p{
+            text-align: center;
+            margin-top: 0%;
+            padding-top: 5px;
+            font-size: 17px;
+            
+        }
+        .colours{
+            display: grid;
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 30px 30px 30px;
+            grid-row-gap: 30px;
+            grid-column-gap: 30%;
+        }
+
+        .colours>div>p{
+            text-align: center;
+            margin-top: 0%;
+            padding-top: 5px;
+        }
+        .colours>div{
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 10px;
+            /* height: 80px; */
+            width: 150%;
+            font-size: 20px;
+            height: 25px;
+            margin-left: 5px;
+            margin-top: 15px;
+        }
+        .colours_one{
+            background-color: rgb(255, 255, 204);
+        }
+        .colours_two{
+            background-color: black;
+        }
+        .colours_three{
+            background-color:rgb(0, 0, 255) ;
+        }
+        .colours_four{
+            background-color: rgb(179, 0, 0);
+        }
+        .colours_five{
+            background-color: yellow;
+        }
+        .colours_six{
+           background-color: rgb(0, 153, 0);
+        }
+        .colours_seven{
+            background-color: rgb(115, 115, 115);
+        }
+        .colours_eight{
+            background-color: rgb(128, 0, 0);
+        }
+        .barnd_h1{
+            margin-top: 1%;
+            padding: 2px 6px;
+            /* border: 1px solid red; */
+            width: 270%; 
+            /* margin-top: 2%; */
+        }
+        .brand_text{
+            display: flex;
+            margin-top: 4%;
+        }
+        .price_bar{
+            height: 14px;
+            width: 70%;
+            background-color: rgb(153, 0, 0);
+            margin-left: 6%;
+            margin-top: 5%;
+            border-radius: 5px;
+        }
+        .price{
+           
+            display: flex;
+            margin-top: 10%;
+        }
+        .price_one{
+            height: 30px;
+            width: 20%;
+            border: 1px solid black;   
+            margin-left: 4%;
+            border-radius: 4px;
+        }
+        .price_two{
+            height: 30px;
+            width: 30%;
+            border: 1px solid black; 
+            margin-left: 30px;
+            border-radius: 4px;
+
+        }
+        .price_para{
+            margin-top: 8%;
+            padding-left: 8%;
+        }
+        .range{
+            margin-left: 40px;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="full_div">
+        <!-- gender code start -->
+        <div class="first_div">
+           <div class="first_one">
+               <div class="gender">
+                <h5 class="h1">G E N D E R </h5>
+                   <div class="arrow">
+                    <i style="font-size:26px" class="fa">&#xf107;</i>
+                   </div>
+               </div>
+            </div>
+           <div class="first_two">
+               <div class="chekbox" style="display: flex;">
+                <label for="mycheckbox">
+                    <input type="checkbox">
+                </label>
+                <div class="gender">
+                    <h7 class="men">Men  (1746)</h7>
+                </div>
+               </div>
+               <div class="first_two">
+                <div class="chekbox" style="display: flex;">
+                 <label for="mycheckbox">
+                     <input type="checkbox">
+                 </label>
+                 <div class="gender">
+                     <h7 class="men">women(389)</h7>
+                 </div>
+                </div>  
+           </div> 
+        </div>
+        <!-- category start here  -->
+        <div class="second_div">
+            <div class="second_one">
+                <div class="gender">
+                 <h5 class="h1">CATEGORY</h5>
+                    <div class="arrow">
+                     <i style="font-size:26px" class="fa">	&#xf107;</i>
+                    </div>
+                </div>
+             </div>
+            <div class="first_two">
+                <div class="chekbox" style="display: flex;">
+                 <label for="mycheckbox">
+                     <input type="checkbox">
+                 </label>
+                 <div class="gender">
+                     <h7 class="men">Fotwear(821)</h7>
+                 </div>
+                </div>
+                <div class="first_two">
+                 <div class="chekbox" style="display: flex;">
+                  <label for="mycheckbox">
+                      <input type="checkbox">
+                  </label>
+                  <div class="gender">
+                      <h7 class="men">Clothing (756)</h7>
+                  </div>
+                 </div>  
+                 <div class="first_two">
+                    <div class="chekbox" style="display: flex;">
+                     <label for="mycheckbox">
+                         <input type="checkbox">
+                     </label>
+                     <div class="gender">
+                         <h7 class="men">Accessories(160)</h7>
+                     </div>
+                    </div>  
+            </div> 
+         </div>
+         <!-- product type start here  -->
+         <div class="second_div">
+            <div class="second_one">
+                <div class="gender">
+                 <h5 class="h1">PRODUCT TYPE</h5>
+                    <div class="arrow">
+                     <i style="font-size:26px" class="fa">&#xf107;</i>
+                    </div>
+                </div>
+             </div>
+            <div class="first_two">
+                <div class="chekbox" style="display: flex;">
+                 <label for="mycheckbox">
+                     <input type="checkbox">
+                 </label>
+                 <div class="gender">
+                     <h7 class="men">Shoes (703)</h7>
+                 </div>
+                </div>
+                <div class="first_two">
+                 <div class="chekbox" style="display: flex;">
+                  <label for="mycheckbox">
+                      <input type="checkbox">
+                  </label>
+                  <div class="gender">
+                      <h7 class="men">T-Shirts (347)</h7>
+                  </div>
+                 </div>  
+                 <div class="first_two">
+                    <div class="chekbox" style="display: flex;">
+                     <label for="mycheckbox">
+                         <input type="checkbox">
+                     </label>
+                     <div class="gender">
+                         <h7 class="men">Sandals/Slippers (130)</h7>
+                     </div>
+                    </div>  
+            </div> 
+            <div class="first_two">
+                <div class="chekbox" style="display: flex;">
+                 <label for="mycheckbox">
+                     <input type="checkbox">
+                 </label>
+                 <div class="gender">
+                     <h7 class="men">Polo Shirts (101)</h7>
+                 </div>
+                </div>
+                <div class="first_two">
+                 <div class="chekbox" style="display: flex;">
+                  <label for="mycheckbox">
+                      <input type="checkbox">
+                  </label>
+                  <div class="gender">
+                      <h7 class="men"> Shorts (91)</h7>
+                  </div>
+                 </div>  
+                 <div class="first_two">
+                    <div class="chekbox" style="display: flex;">
+                     <label for="mycheckbox">
+                         <input type="checkbox">
+                     </label>
+                     <div class="gender">
+                         <h7 class="men">Pants (90)</h7>
+                     </div>
+                    </div>  
+
+                    <div class="first_two">
+                        <div class="chekbox" style="display: flex;">
+                         <label for="mycheckbox">
+                             <input type="checkbox">
+                         </label>
+                         <div class="gender">
+                             <h7 class="men">Bags (82)</h7>
+                         </div>
+                    </div> 
+                    <div class="gender">
+                        <h7 class="men">>view more</h7>
+                    </div> 
+                    <div class="size_div">
+                        <div class="size">
+                         <h5 class="size_h5">SIZE</h5>
+                            <div class="arrow">
+                             <i style="font-size:26px" class="fa">&#xf107;</i>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- after size div  -->
+                     <div class="sizes">
+                         <div><p>XS</p></div>
+                         <div><p>S</p></div>
+                         <div><p>M</p></div>
+                         <div><p>L</p></div>
+                         <div><p>XL</p></div>
+                         <div><p>2XL</p></div>
+                         <div><p>5</p></div>
+                         <div><p>6</p></div>
+                     </div>
+                     <div class="size_div">
+                        <div class="size">
+                         <h5 class="size_h5">COLOUR</h5>
+                            <div class="arrow">
+                             <i style="font-size:26px" class="fa">&#xf107;</i>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- after size div  -->
+                     <div class="colours">
+                         <div class="colours_one"><p></p></div>
+                         <div class="colours_two"><p></p></div>
+                         <div class="colours_three"><p></p></div>
+                         <div class="colours_four"><p></p></div>
+                         <div class="colours_five"><p></p></div>
+                         <div class="colours_six"><p></p></div>
+                         <div class="colours_seven"><p></p></div>
+                         <div class="colours_eight"><p></p></div>
+                     </div>
+                     <div class="gender">
+                        <h7 class="men">>view more</h7>
+                    </div>
+                    <!-- brand line strt  -->
+                    <div class="brand_div">
+                        <div class="first_one">
+                            <div class="brand_text">
+                             <h5 class="barnd_h1">BRANDS </h5>
+                                <div class="arrow">
+                                 <i style="font-size:26px" class="fa">&#xf107;</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first_two">
+                            <div class="chekbox" style="display: flex;">
+                             <label for="mycheckbox">
+                                 <input type="checkbox">
+                             </label>
+                             <div class="gender">
+                                 <h7 class="men">Classics (19)</h7>
+                             </div>
+                            </div>
+                            <div class="first_two">
+                                <div class="chekbox" style="display: flex;">
+                                 <label for="mycheckbox">
+                                     <input type="checkbox">
+                                 </label>
+                                 <div class="gender">
+                                     <h7 class="men">Sport (1749)</h7>
+                                 </div>
+                                </div>
+                                <!-- brand line end -->
+                                <!-- div class="brand_div"> -->
+                        
+                         <div class="size_div">
+                         <div class="size">
+                           <h5 class="size_h5">COLLECTION</h5>
+                          <div class="arrow">
+                              <i style="font-size:26px" class="fa">&#xf107;</i>
+                        </div>
+                      </div>
+                 </div>
+                     <div class="first_two">
+                         <div class="chekbox" style="display: flex;">
+                            <label for="mycheckbox">
+                              <input type="checkbox">
+                             </label>
+                         <div class="gender">
+                                <h7 class="men">Aov (685)</h7>
+                            </div>
+                         </div>
+                             <div class="first_two">
+                              <div class="chekbox" style="display: flex;">
+                              <label for="mycheckbox">
+                                <input type="checkbox">
+                             </label>
+                              <div class="gender">
+                                <h7 class="men">Adaptive Response System (2)</h7>
+                             </div>
+                         </div>  
+                             <div class="first_two">
+                              <div class="chekbox" style="display: flex;">
+                                 <label for="mycheckbox">
+                                   <input type="checkbox">
+                                </label>
+                            <div class="gender">
+                                    <h7 class="men">Assassins Creed (1)</h7>
+                                </div>
+                             </div>  
+                         </div> 
+                             <div class="first_two">
+                                 <div class="chekbox" style="display: flex;">
+                                     <label for="mycheckbox">
+                                         <input type="checkbox">
+                                     </label>
+                                     <div class="gender">
+                                         <h7 class="men">Bbc (1)</h7>
+                                 </div>
+                             </div>
+                              <div class="first_two">
+                               <div class="chekbox" style="display: flex;">
+                                  <label for="mycheckbox">
+                                      <input type="checkbox">
+                                  </label>
+                                   <div class="gender">
+                                      <h7 class="men"> Best Of Collabs (2)</h7>
+                                  </div>
+                                 </div>  
+                                    <div class="gender">
+                                      <h7 class="men">>view more</h7>
+                                 </div>
+                                 <!-- sports line start -->
+                                 <div class="first_one">
+                                    <div class="brand_text">
+                                     <h5 class="barnd_h1">SPORTS </h5>
+                                        <div class="arrow">
+                                         <i style="font-size:26px" class="fa">&#xf107;</i>
+                                        </div>
+                                    </div>
+                                </div>  
+
+                              <div class="first_two">
+                               <div class="chekbox" style="display: flex;">
+                                 <label for="mycheckbox">
+                                     <input type="checkbox">
+                                 </label>
+                                    <div class="gender">
+                                        <h7 class="men">Running (533)</h7>
+                                  </div>
+                               </div>      
+                                 <div class="first_two">
+                                    <div class="chekbox" style="display: flex;">
+                                         <label for="mycheckbox">
+                                             <input type="checkbox">
+                                         </label>
+                                     <div class="gender">
+                                             <h7 class="men">Training (774)</h7>
+                                       </div>
+                                 </div> 
+                                 <div class="first_two">
+                                    <div class="chekbox" style="display: flex;">
+                                      <label for="mycheckbox">
+                                          <input type="checkbox">
+                                      </label>
+                                         <div class="gender">
+                                             <h7 class="men">Casual (206)</h7>
+                                       </div>
+                                    </div>      
+                                      <div class="first_two">
+                                         <div class="chekbox" style="display: flex;">
+                                              <label for="mycheckbox">
+                                                  <input type="checkbox">
+                                              </label>
+                                          <div class="gender">
+                                                  <h7 class="men">Swim (126)</h7>
+                                            </div>
+                                      </div>
+                                      <div class="first_two">
+                                        <div class="chekbox" style="display: flex;">
+                                          <label for="mycheckbox">
+                                              <input type="checkbox">
+                                          </label>
+                                             <div class="gender">
+                                                 <h7 class="men">Basketball (26)</h7>
+                                           </div>
+                                        </div>      
+                                          <div class="first_two">
+                                             <div class="chekbox" style="display: flex;">
+                                                  <label for="mycheckbox">
+                                                      <input type="checkbox">
+                                                  </label>
+                                              <div class="gender">
+                                                      <h7 class="men">Mixed Martial Arts (12)</h7>
+                                                </div>
+                                          </div>
+                                          <div class="first_two">
+                                            <div class="chekbox" style="display: flex;">
+                                                 <label for="mycheckbox">
+                                                     <input type="checkbox">
+                                                 </label>
+                                             <div class="gender">
+                                                     <h7 class="men">Outdoor (3)</h7>
+                                               </div>
+                                         </div>
+                                         <div class="gender">
+                                            <h7 class="men">>view more</h7>
+                                       </div>
+                            <!-- technology line start here  -->
+                            <div class="first_one">
+                                <div class="brand_text">
+                                 <h5 class="barnd_h1">TECHNOLOGY</h5>
+                                    <div class="arrow">
+                                     <i style="font-size:26px" class="fa">&#xf107;</i>
+                                    </div>
+                                </div>
+                            </div>  
+
+                          <div class="first_two">
+                           <div class="chekbox" style="display: flex;">
+                             <label for="mycheckbox">
+                                 <input type="checkbox">
+                             </label>
+                                <div class="gender">
+                                    <h7 class="men">3dultralite (1)</h7>
+                              </div>
+                           </div>      
+                             <div class="first_two">
+                                <div class="chekbox" style="display: flex;">
+                                     <label for="mycheckbox">
+                                         <input type="checkbox">
+                                     </label>
+                                 <div class="gender">
+                                         <h7 class="men">Activchill (10)</h7>
+                                   </div>
+                             </div> 
+                             <div class="first_two">
+                                <div class="chekbox" style="display: flex;">
+                                  <label for="mycheckbox">
+                                      <input type="checkbox">
+                                  </label>
+                                     <div class="gender">
+                                         <h7 class="men">Astrofoam (4)</h7>
+                                   </div>
+                                </div>      
+                                  <div class="first_two">
+                                     <div class="chekbox" style="display: flex;">
+                                          <label for="mycheckbox">
+                                              <input type="checkbox">
+                                          </label>
+                                      <div class="gender">
+                                              <h7 class="men">Astroride (1)</h7>
+                                        </div>
+                                  </div>
+                                  <div class="first_two">
+                                    <div class="chekbox" style="display: flex;">
+                                      <label for="mycheckbox">
+                                          <input type="checkbox">
+                                      </label>
+                                         <div class="gender">
+                                             <h7 class="men">Dmx (7)</h7>
+                                       </div>
+                                    </div>      
+                                      
+                                     <div class="gender">
+                                        <h7 class="men">>view more</h7>
+                                   </div>
+                                 <!-- price range line start -->
+                                 <div class="first_one">
+                                    <div class="brand_text">
+                                     <h5 class="barnd_h1">PRICE RANGE</h5>
+                                        <div class="arrow">
+                                         <i style="font-size:26px" class="fa">&#xf107;</i>
+                                        </div>
+                                    </div>
+                                </div> 
+                         <div class="price_bar"></div> 
+                        <div class="price">
+                            <div class="price_one"><p class="price_para">Rs 0</p></div>
+                            <div class="range">-</div>
+                            <div class="price_two"><p class="price_para">Rs 20000</p></div>
+                        </div>
+                    <!-- discount part start -->
+                    <div class="first_one">
+                        <div class="brand_text">
+                         <h5 class="barnd_h1">DISCOUNT</h5>
+                            <div class="arrow">
+                             <i style="font-size:26px" class="fa">&#xf107;</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="first_two">
+                        <div class="chekbox" style="display: flex;">
+                          <label for="mycheckbox">
+                              <input type="checkbox">
+                          </label>
+                             <div class="gender">
+                                 <h7 class="men">No Discount</h7>
+                           </div>
+                        </div>
+                        <div class="first_two">
+                            <div class="chekbox" style="display: flex;">
+                              <label for="mycheckbox">
+                                  <input type="checkbox">
+                              </label>
+                                 <div class="gender">
+                                     <h7 class="men">1 - 10%</h7>
+                               </div>
+                            </div>
+                            <div class="first_two">
+                                <div class="chekbox" style="display: flex;">
+                                  <label for="mycheckbox">
+                                      <input type="checkbox">
+                                  </label>
+                                     <div class="gender">
+                                         <h7 class="men">11 - 20%</h7>
+                                   </div>
+                                </div>
+                                <div class="first_two">
+                                    <div class="chekbox" style="display: flex;">
+                                      <label for="mycheckbox">
+                                          <input type="checkbox">
+                                      </label>
+                                         <div class="gender">
+                                             <h7 class="men">21 - 30%</h7>
+                                       </div>
+                                    </div>
+                                    <div class="first_two">
+                                        <div class="chekbox" style="display: flex;">
+                                          <label for="mycheckbox">
+                                              <input type="checkbox">
+                                          </label>
+                                             <div class="gender">
+                                                 <h7 class="men">31 - 40%</h7>
+                                           </div>
+                                        </div>
+                                        <div class="gender">
+                                            <h7 class="men">>view more</h7>
+                                       </div>
+
+            </div> 
+         </div>
+
+    </div>
+</body>
+</html>
